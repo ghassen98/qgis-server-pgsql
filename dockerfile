@@ -2,7 +2,6 @@ FROM debian:bookworm-slim
 
 ENV LANG=en_EN.UTF-8
 
-
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests --allow-unauthenticated -y \
         gnupg \
