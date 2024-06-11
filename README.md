@@ -35,4 +35,13 @@ Type in a browser [http://localhost:8080/qgis-server/?SERVICE=WMS&VERSION=1.3.0&
 
 ## Docker compose
 
+Dans le repertoire principal:
 
+`docker-compose up -d`
+
+ou 
+
+```
+docker-compose pull
+docker-compose up --force-recreate --build -d
+```
