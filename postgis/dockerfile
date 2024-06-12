@@ -10,17 +10,24 @@ ENV POSTGIS_VERSION 3.4.2+dfsg-1.pgdg110+1
 RUN apt-get update \
       && apt-cache showpkg postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
       && apt-get install -y --no-install-recommends \
-           # ca-certificates: for accessing remote raster files;
-           #   fix: https://github.com/postgis/docker-postgis/issues/307
-           ca-certificates \
-           \
-           postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR=$POSTGIS_VERSION \
-           postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
+            # ca-certificates: for accessing remote raster files;
+            #   fix: https://github.com/postgis/docker-postgis/issues/307
+            ca-certificates \
+            \
+            # Added
+            wget \
+            unzip \
+            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR=$POSTGIS_VERSION \
+            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
       && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /docker-entrypoint-initdb.d
 COPY ./initdb-postgis.sh /docker-entrypoint-initdb.d/10_postgis.sh
 COPY ./update-postgis.sh /usr/local/bin
+
+# Create the /shapefile directory with appropriate permissions
+# Added
+RUN mkdir -p /shapefile && chown -R postgres:postgres /shapefile
 
 # Copy the shapefile and the load script into the image
 COPY data/admin_0_countries.zip /admin_0_countries.zip
@@ -29,5 +36,11 @@ COPY load_shapefile.sh /docker-entrypoint-initdb.d/load_shapefile.sh
 # Make the script executable
 RUN chmod +x /docker-entrypoint-initdb.d/load_shapefile.sh
 
+# Copy custom pg_hba.conf into the container
+COPY pg_hba.conf /etc/postgresql/postgresql.conf.d/pg_hba.conf
+
 # Expose the PostgreSQL port
 EXPOSE 5432
+
+# Restart PostgreSQL to apply configuration changes
+CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
