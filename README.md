@@ -42,6 +42,10 @@ Dans le repertoire principal:
 ou 
 
 ```
+docker system prune -a
 docker-compose pull
 docker-compose up --force-recreate --build -d
 ```
+
+
+docker run --name my-postgis -e POSTGRES_PASSWORD=postgres -d postgis:1.0
