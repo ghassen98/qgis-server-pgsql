@@ -17,7 +17,6 @@ RUN apt-get update \
             # Added
             wget \
             unzip \
-            postgis \
             postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR=$POSTGIS_VERSION \
             postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
       && rm -rf /var/lib/apt/lists/*

@@ -4,15 +4,20 @@ set -e
 
 # Perform all actions as $POSTGRES_USER
 export PGUSER="$POSTGRES_USER"
+export PGPASSWORD="$POSTGRES_PASSWORD"
+
+# psql=( psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --no-password )
+psql=( psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" )
 
 # Create the 'template_postgis' template db
 "${psql[@]}" <<- 'EOSQL'
-CREATE DATABASE template_postgis IS_TEMPLATE true;
+CREATE DATABASE IF NOT EXISTS template_postgis IS_TEMPLATE true;
 EOSQL
 
 # Load PostGIS into both template_database and $POSTGRES_DB
 for DB in template_postgis "$POSTGRES_DB"; do
 	echo "Loading PostGIS extensions into $DB"
+	echo "POSTGRES_USER is $POSTGRES_USER"
 	"${psql[@]}" --dbname="$DB" <<-'EOSQL'
 		CREATE EXTENSION IF NOT EXISTS postgis;
 		CREATE EXTENSION IF NOT EXISTS postgis_topology;
