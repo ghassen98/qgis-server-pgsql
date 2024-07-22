@@ -43,4 +43,5 @@ COPY pg_hba.conf /etc/postgresql/postgresql.conf.d/pg_hba.conf
 EXPOSE 5432
 
 # Restart PostgreSQL to apply configuration changes
-CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+# CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf.d/pg_hba.conf"]
