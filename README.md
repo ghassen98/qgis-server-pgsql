@@ -47,5 +47,27 @@ docker-compose pull
 docker-compose up --force-recreate --build -d
 ```
 
+# Run pgAdmin container
+docker run --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 8081:80 -d dpage/pgadmin4:latest
 
-docker run --name my-postgis -e POSTGRES_PASSWORD=postgres -d postgis:1.0
+docker volume create pg_data
+
+docker build -t postgis:1.0 .
+
+# Run Postgis container
+docker run --name postgis -p 5432:5432 -v pg_data:/var/lib/postgresql -e ALLOW_IP_RANGE=0.0.0.0/0 -e POSTGRES_DB=gis -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres --restart=always -d postgis/postgis:16-3.4
+
+docker network create postgis_network
+docker network connect postgis_network <container_ID>
+
+
+psql -h localhost -p 5432 -U postgres
+pg_isready -h postgis -p 5432 -U postgres
+
+#### From Github Copilot
+
+# Construire l'image Docker
+docker build -t custom-postgis .
+
+# Exécuter le conteneur Docker
+docker run --name postgis-container -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis

@@ -6,12 +6,16 @@ set -e
 export PGUSER="$POSTGRES_USER"
 export PGPASSWORD="$POSTGRES_PASSWORD"
 
+echo "INIT - Connected user is $(whoami)"
+echo "PGUSER is $PGUSER"
+echo "PGPASSWORD is $PGPASSWORD"
+
 # psql=( psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --no-password )
 psql=( psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" )
 
 # Create the 'template_postgis' template db
 "${psql[@]}" <<- 'EOSQL'
-CREATE DATABASE IF NOT EXISTS template_postgis IS_TEMPLATE true;
+CREATE DATABASE template_postgis IS_TEMPLATE true;
 EOSQL
 
 # Load PostGIS into both template_database and $POSTGRES_DB

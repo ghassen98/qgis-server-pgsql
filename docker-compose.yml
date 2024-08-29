@@ -28,10 +28,16 @@ services:
     volumes:
         - postgis_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=postgres
+      - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DBNAME=postgres
+      - PGDATA=/var/lib/postgresql/data/some_name/
       #- POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology,postgis_raster,pgrouting
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h postgis -p 5432 -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
       - 5432:5432
 
