@@ -71,3 +71,5 @@ docker build -t custom-postgis .
 
 # Exécuter le conteneur Docker
 docker run --name postgis-container -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis
+
+docker run --name postgis-container -p 5432:5432 -e ALLOW_IP_RANGE=0.0.0.0/0 -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis

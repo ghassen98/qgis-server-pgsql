@@ -1,6 +1,5 @@
 services:
   qgis-server:
-    # Should use version with utf-8 locale support:
     build: qgis-server
     volumes:
       - ${PWD}/qgis-server/data:/data:ro
@@ -23,16 +22,15 @@ services:
 
   postgis:
     build: postgis
-    #volumes:
-      #- hostPath:containerPath:ro
     volumes:
         - postgis_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DBNAME=postgres
-      - PGDATA=/var/lib/postgresql/data/some_name/
-      #- POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology,postgis_raster,pgrouting
+      # - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mydatabase
+      - ALLOW_IP_RANGE=0.0.0.0/0
+      # - PGDATA=/var/lib/postgresql/data/some_name/
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -h postgis -p 5432 -U ${POSTGRES_USER}"]
       interval: 10s
