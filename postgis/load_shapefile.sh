@@ -5,7 +5,7 @@ echo "Sleeping 10 sec until postgresql is available.."
 sleep 10
 
 # Display the connected user
-echo "LOAD - Connected user is $(whoami)"
+echo "Connected user is $(whoami)"
 
 # Variables de connexion à la base de données
 DB_NAME=${POSTGRES_DB:-postgres}
