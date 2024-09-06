@@ -1,0 +1,3523 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.34.9-Prizren" saveUser="ghass" projectname="" saveUserFull="Ghassen Aouinti" saveDateTime="2024-09-02T21:47:28">
+  <homePath path=""/>
+  <title></title>
+  <transaction mode="Disabled"/>
+  <projectFlags set=""/>
+  <projectCrs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+      <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+      <srsid>3452</srsid>
+      <srid>4326</srid>
+      <authid>EPSG:4326</authid>
+      <description>WGS 84</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <elevation-shading-renderer light-altitude="45" edl-is-active="1" hillshading-z-factor="1" light-azimuth="315" is-active="0" combined-method="0" edl-distance="0.5" hillshading-is-multidirectional="0" hillshading-is-active="0" edl-strength="1000" edl-distance-unit="0"/>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer legend_split_behavior="0" source="dbname='mydatabase' host=172.26.185.179 port=5432 key='gid' srid=4326 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;public&quot;.&quot;admin_0_countries&quot; (geom)" providerKey="postgres" patch_size="-1,-1" checked="Qt::Checked" legend_exp="" expanded="1" id="admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f" name="admin_0_countries">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" maxScale="0" self-snapping="0" enabled="0" type="1" mode="2" minScale="0" intersection-snapping="0" scaleDependencyMode="0" tolerance="12">
+    <individual-layer-settings>
+      <layer-setting maxScale="0" enabled="0" type="1" minScale="0" units="1" id="admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f" tolerance="12"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>-188.99999999999991473</xmin>
+      <ymin>-94.34085251632494362</ymin>
+      <xmax>188.99999999999997158</xmax>
+      <ymax>87.97495316932507592</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="admin_0_countries" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" isInOverview="0" layerid="admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <main-annotation-layer maxScale="0" legendPlaceholderImage="" type="annotation" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" minScale="1e+08" autoRefreshTime="0" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0">
+    <id>Annotations_689347f6_d65c_4e47_aea6_70f0ab3de9ac</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <dates/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <flags>
+      <Identifiable>1</Identifiable>
+      <Removable>1</Removable>
+      <Searchable>1</Searchable>
+      <Private>0</Private>
+    </flags>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer styleCategories="AllStyleCategories" symbologyReferenceScale="-1" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" type="vector" geometry="Polygon" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" minScale="100000000" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" legendPlaceholderImage="" maxScale="0" simplifyDrawingHints="1" wkbType="MultiPolygon" readOnly="0">
+      <extent>
+        <xmin>-179.99999999999991473</xmin>
+        <ymin>-89.99999999999994316</ymin>
+        <xmax>180</xmax>
+        <ymax>83.63410065300007545</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-179.99999999999991473</xmin>
+        <ymin>-89.99999999999994316</ymin>
+        <xmax>180</xmax>
+        <ymax>83.63410065300007545</ymax>
+      </wgs84extent>
+      <id>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</id>
+      <datasource>dbname='mydatabase' host=172.26.185.179 port=5432 key='gid' srid=4326 type=MultiPolygon checkPrimaryKeyUnicity='1' table="public"."admin_0_countries" (geom)</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>admin_0_countries</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <dates/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+            <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+            <srsid>3452</srsid>
+            <srid>4326</srid>
+            <authid>EPSG:4326</authid>
+            <description>WGS 84</description>
+            <projectionacronym>longlat</projectionacronym>
+            <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial dimensions="2" maxz="0" minx="179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368" miny="179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368" minz="0" maxy="-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368" crs="EPSG:4326" maxx="-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal startExpression="" enabled="0" limitMode="0" fixedDuration="0" mode="0" startField="" accumulate="0" durationUnit="min" endField="" durationField="gid" endExpression="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <elevation binding="Centroid" extrusion="0" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" symbology="Line" type="IndividualFeatures" respectLayerSymbol="1" clamping="Terrain" zoffset="0" zscale="1">
+        <data-defined-properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </data-defined-properties>
+        <profileLineSymbol>
+          <symbol type="line" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" id="{026b2761-f79d-4506-a9bf-f8d76a720335}" class="SimpleLine" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="0" name="align_dash_pattern"/>
+                <Option type="QString" value="square" name="capstyle"/>
+                <Option type="QString" value="5;2" name="customdash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+                <Option type="QString" value="MM" name="customdash_unit"/>
+                <Option type="QString" value="0" name="dash_pattern_offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+                <Option type="QString" value="0" name="draw_inside_polygon"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="213,180,60,255" name="line_color"/>
+                <Option type="QString" value="solid" name="line_style"/>
+                <Option type="QString" value="0.6" name="line_width"/>
+                <Option type="QString" value="MM" name="line_width_unit"/>
+                <Option type="QString" value="0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="0" name="ring_filter"/>
+                <Option type="QString" value="0" name="trim_distance_end"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+                <Option type="QString" value="0" name="trim_distance_start"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+                <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+                <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+                <Option type="QString" value="0" name="use_custom_dash"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </profileLineSymbol>
+        <profileFillSymbol>
+          <symbol type="fill" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" id="{e06f7de8-fe8f-4624-a025-16fe48bbceca}" class="SimpleFill" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="213,180,60,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="152,129,43,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.2" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </profileFillSymbol>
+        <profileMarkerSymbol>
+          <symbol type="marker" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" id="{910aa447-b135-479c-834e-f7cdd87d6831}" class="SimpleMarker" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="213,180,60,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="diamond" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="152,129,43,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.2" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="3" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </profileMarkerSymbol>
+      </elevation>
+      <renderer-v2 type="singleSymbol" symbollevels="0" referencescale="-1" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="fill" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="0" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" id="{7065ee28-604f-481d-9ced-5eb425adfe02}" class="SimpleFill" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="77,175,74,118" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="56,128,54,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <selection mode="Default">
+        <selectionColor invalid="1"/>
+        <selectionSymbol>
+          <symbol type="fill" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" id="{e9bde126-bc71-47f4-9442-976c9e08fa05}" class="SimpleFill" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="0,0,255,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </selectionSymbol>
+      </selection>
+      <customproperties>
+        <Option type="Map">
+          <Option type="int" value="0" name="embeddedWidgets/count"/>
+          <Option name="variableNames"/>
+          <Option name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory spacingUnitScale="3x:0,0,0,0,0,0" lineSizeType="MM" enabled="0" scaleDependency="Area" scaleBasedVisibility="0" height="15" backgroundAlpha="255" spacingUnit="MM" rotationOffset="270" penColor="#000000" minimumSize="0" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" sizeType="MM" spacing="5" diagramOrientation="Up" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" direction="0" showAxis="1" penWidth="0" opacity="1" sizeScale="3x:0,0,0,0,0,0" width="15" barWidth="5" penAlpha="255">
+          <fontProperties style="" strikethrough="0" underline="0" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" bold="0" italic="0"/>
+          <axisSymbol>
+            <symbol type="line" frame_rate="10" clip_to_extent="1" is_animated="0" force_rhr="0" name="" alpha="1">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer enabled="1" locked="0" id="{cfa20dcc-2dd1-432e-b6ad-8318b61d3b26}" class="SimpleLine" pass="0">
+                <Option type="Map">
+                  <Option type="QString" value="0" name="align_dash_pattern"/>
+                  <Option type="QString" value="square" name="capstyle"/>
+                  <Option type="QString" value="5;2" name="customdash"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="customdash_unit"/>
+                  <Option type="QString" value="0" name="dash_pattern_offset"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+                  <Option type="QString" value="0" name="draw_inside_polygon"/>
+                  <Option type="QString" value="bevel" name="joinstyle"/>
+                  <Option type="QString" value="35,35,35,255" name="line_color"/>
+                  <Option type="QString" value="solid" name="line_style"/>
+                  <Option type="QString" value="0.26" name="line_width"/>
+                  <Option type="QString" value="MM" name="line_width_unit"/>
+                  <Option type="QString" value="0" name="offset"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="offset_unit"/>
+                  <Option type="QString" value="0" name="ring_filter"/>
+                  <Option type="QString" value="0" name="trim_distance_end"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+                  <Option type="QString" value="0" name="trim_distance_start"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+                  <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+                  <Option type="QString" value="0" name="use_custom_dash"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+                </Option>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" value="" name="name"/>
+                    <Option name="properties"/>
+                    <Option type="QString" value="collection" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings linePlacementFlags="18" obstacle="0" zIndex="0" dist="0" priority="0" showAll="1" placement="1">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration type="Map">
+          <Option type="Map" name="QgsGeometryGapCheck">
+            <Option type="double" value="0" name="allowedGapsBuffer"/>
+            <Option type="bool" value="false" name="allowedGapsEnabled"/>
+            <Option type="QString" value="" name="allowedGapsLayer"/>
+          </Option>
+        </checkConfiguration>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="gid" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="featurecla" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="scalerank" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="labelrank" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sovereignt" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sov_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_dif" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="level" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tlc" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="admin" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="geou_dif" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="geounit" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gu_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="su_dif" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="subunit" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="su_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brk_diff" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_long" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brk_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brk_name" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brk_group" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="abbrev" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="postal" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="formal_en" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="formal_fr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ciawf" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="note_adm0" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="note_brk" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_sort" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_alt" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mapcolor7" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mapcolor8" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mapcolor9" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mapcolor13" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pop_est" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pop_rank" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pop_year" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gdp_md" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gdp_year" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="economy" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="income_grp" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fips_10" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_a2" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_a2_eh" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_a3_eh" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_n3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="iso_n3_eh" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="un_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wb_a2" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wb_a3" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="woe_id" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="woe_id_eh" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="woe_note" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_iso" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_diff" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_tlc" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_us" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_fr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ru" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_es" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_cn" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_tw" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_in" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_np" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_pk" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_de" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_gb" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_br" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_il" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ps" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_sa" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_eg" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ma" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_pt" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ar" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_jp" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ko" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_vn" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_tr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_id" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_pl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_gr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_it" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_nl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_se" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_bd" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_ua" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_un" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adm0_a3_wb" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="continent" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="region_un" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="subregion" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="region_wb" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_len" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="long_len" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="abbrev_len" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tiny" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="homepart" configurationFlags="NoFlag">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="min_zoom" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="min_label" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="max_label" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="label_x" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="label_y" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ne_id" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wikidataid" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ar" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_bn" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_de" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_en" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_es" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_fa" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_fr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_el" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_he" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_hi" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_hu" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_id" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_it" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ja" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ko" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_nl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_pl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_pt" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ru" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_sv" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_tr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_uk" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_ur" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_vi" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_zh" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name_zht" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_iso" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tlc_diff" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_tlc" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_us" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_fr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ru" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_es" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_cn" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_tw" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_in" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_np" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_pk" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_de" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_gb" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_br" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_il" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ps" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_sa" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_eg" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ma" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_pt" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ar" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_jp" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ko" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_vn" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_tr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_id" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_pl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_gr" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_it" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_nl" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_se" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_bd" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fclass_ua" configurationFlags="NoFlag">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="gid"/>
+        <alias index="1" name="" field="featurecla"/>
+        <alias index="2" name="" field="scalerank"/>
+        <alias index="3" name="" field="labelrank"/>
+        <alias index="4" name="" field="sovereignt"/>
+        <alias index="5" name="" field="sov_a3"/>
+        <alias index="6" name="" field="adm0_dif"/>
+        <alias index="7" name="" field="level"/>
+        <alias index="8" name="" field="type"/>
+        <alias index="9" name="" field="tlc"/>
+        <alias index="10" name="" field="admin"/>
+        <alias index="11" name="" field="adm0_a3"/>
+        <alias index="12" name="" field="geou_dif"/>
+        <alias index="13" name="" field="geounit"/>
+        <alias index="14" name="" field="gu_a3"/>
+        <alias index="15" name="" field="su_dif"/>
+        <alias index="16" name="" field="subunit"/>
+        <alias index="17" name="" field="su_a3"/>
+        <alias index="18" name="" field="brk_diff"/>
+        <alias index="19" name="" field="name"/>
+        <alias index="20" name="" field="name_long"/>
+        <alias index="21" name="" field="brk_a3"/>
+        <alias index="22" name="" field="brk_name"/>
+        <alias index="23" name="" field="brk_group"/>
+        <alias index="24" name="" field="abbrev"/>
+        <alias index="25" name="" field="postal"/>
+        <alias index="26" name="" field="formal_en"/>
+        <alias index="27" name="" field="formal_fr"/>
+        <alias index="28" name="" field="name_ciawf"/>
+        <alias index="29" name="" field="note_adm0"/>
+        <alias index="30" name="" field="note_brk"/>
+        <alias index="31" name="" field="name_sort"/>
+        <alias index="32" name="" field="name_alt"/>
+        <alias index="33" name="" field="mapcolor7"/>
+        <alias index="34" name="" field="mapcolor8"/>
+        <alias index="35" name="" field="mapcolor9"/>
+        <alias index="36" name="" field="mapcolor13"/>
+        <alias index="37" name="" field="pop_est"/>
+        <alias index="38" name="" field="pop_rank"/>
+        <alias index="39" name="" field="pop_year"/>
+        <alias index="40" name="" field="gdp_md"/>
+        <alias index="41" name="" field="gdp_year"/>
+        <alias index="42" name="" field="economy"/>
+        <alias index="43" name="" field="income_grp"/>
+        <alias index="44" name="" field="fips_10"/>
+        <alias index="45" name="" field="iso_a2"/>
+        <alias index="46" name="" field="iso_a2_eh"/>
+        <alias index="47" name="" field="iso_a3"/>
+        <alias index="48" name="" field="iso_a3_eh"/>
+        <alias index="49" name="" field="iso_n3"/>
+        <alias index="50" name="" field="iso_n3_eh"/>
+        <alias index="51" name="" field="un_a3"/>
+        <alias index="52" name="" field="wb_a2"/>
+        <alias index="53" name="" field="wb_a3"/>
+        <alias index="54" name="" field="woe_id"/>
+        <alias index="55" name="" field="woe_id_eh"/>
+        <alias index="56" name="" field="woe_note"/>
+        <alias index="57" name="" field="adm0_iso"/>
+        <alias index="58" name="" field="adm0_diff"/>
+        <alias index="59" name="" field="adm0_tlc"/>
+        <alias index="60" name="" field="adm0_a3_us"/>
+        <alias index="61" name="" field="adm0_a3_fr"/>
+        <alias index="62" name="" field="adm0_a3_ru"/>
+        <alias index="63" name="" field="adm0_a3_es"/>
+        <alias index="64" name="" field="adm0_a3_cn"/>
+        <alias index="65" name="" field="adm0_a3_tw"/>
+        <alias index="66" name="" field="adm0_a3_in"/>
+        <alias index="67" name="" field="adm0_a3_np"/>
+        <alias index="68" name="" field="adm0_a3_pk"/>
+        <alias index="69" name="" field="adm0_a3_de"/>
+        <alias index="70" name="" field="adm0_a3_gb"/>
+        <alias index="71" name="" field="adm0_a3_br"/>
+        <alias index="72" name="" field="adm0_a3_il"/>
+        <alias index="73" name="" field="adm0_a3_ps"/>
+        <alias index="74" name="" field="adm0_a3_sa"/>
+        <alias index="75" name="" field="adm0_a3_eg"/>
+        <alias index="76" name="" field="adm0_a3_ma"/>
+        <alias index="77" name="" field="adm0_a3_pt"/>
+        <alias index="78" name="" field="adm0_a3_ar"/>
+        <alias index="79" name="" field="adm0_a3_jp"/>
+        <alias index="80" name="" field="adm0_a3_ko"/>
+        <alias index="81" name="" field="adm0_a3_vn"/>
+        <alias index="82" name="" field="adm0_a3_tr"/>
+        <alias index="83" name="" field="adm0_a3_id"/>
+        <alias index="84" name="" field="adm0_a3_pl"/>
+        <alias index="85" name="" field="adm0_a3_gr"/>
+        <alias index="86" name="" field="adm0_a3_it"/>
+        <alias index="87" name="" field="adm0_a3_nl"/>
+        <alias index="88" name="" field="adm0_a3_se"/>
+        <alias index="89" name="" field="adm0_a3_bd"/>
+        <alias index="90" name="" field="adm0_a3_ua"/>
+        <alias index="91" name="" field="adm0_a3_un"/>
+        <alias index="92" name="" field="adm0_a3_wb"/>
+        <alias index="93" name="" field="continent"/>
+        <alias index="94" name="" field="region_un"/>
+        <alias index="95" name="" field="subregion"/>
+        <alias index="96" name="" field="region_wb"/>
+        <alias index="97" name="" field="name_len"/>
+        <alias index="98" name="" field="long_len"/>
+        <alias index="99" name="" field="abbrev_len"/>
+        <alias index="100" name="" field="tiny"/>
+        <alias index="101" name="" field="homepart"/>
+        <alias index="102" name="" field="min_zoom"/>
+        <alias index="103" name="" field="min_label"/>
+        <alias index="104" name="" field="max_label"/>
+        <alias index="105" name="" field="label_x"/>
+        <alias index="106" name="" field="label_y"/>
+        <alias index="107" name="" field="ne_id"/>
+        <alias index="108" name="" field="wikidataid"/>
+        <alias index="109" name="" field="name_ar"/>
+        <alias index="110" name="" field="name_bn"/>
+        <alias index="111" name="" field="name_de"/>
+        <alias index="112" name="" field="name_en"/>
+        <alias index="113" name="" field="name_es"/>
+        <alias index="114" name="" field="name_fa"/>
+        <alias index="115" name="" field="name_fr"/>
+        <alias index="116" name="" field="name_el"/>
+        <alias index="117" name="" field="name_he"/>
+        <alias index="118" name="" field="name_hi"/>
+        <alias index="119" name="" field="name_hu"/>
+        <alias index="120" name="" field="name_id"/>
+        <alias index="121" name="" field="name_it"/>
+        <alias index="122" name="" field="name_ja"/>
+        <alias index="123" name="" field="name_ko"/>
+        <alias index="124" name="" field="name_nl"/>
+        <alias index="125" name="" field="name_pl"/>
+        <alias index="126" name="" field="name_pt"/>
+        <alias index="127" name="" field="name_ru"/>
+        <alias index="128" name="" field="name_sv"/>
+        <alias index="129" name="" field="name_tr"/>
+        <alias index="130" name="" field="name_uk"/>
+        <alias index="131" name="" field="name_ur"/>
+        <alias index="132" name="" field="name_vi"/>
+        <alias index="133" name="" field="name_zh"/>
+        <alias index="134" name="" field="name_zht"/>
+        <alias index="135" name="" field="fclass_iso"/>
+        <alias index="136" name="" field="tlc_diff"/>
+        <alias index="137" name="" field="fclass_tlc"/>
+        <alias index="138" name="" field="fclass_us"/>
+        <alias index="139" name="" field="fclass_fr"/>
+        <alias index="140" name="" field="fclass_ru"/>
+        <alias index="141" name="" field="fclass_es"/>
+        <alias index="142" name="" field="fclass_cn"/>
+        <alias index="143" name="" field="fclass_tw"/>
+        <alias index="144" name="" field="fclass_in"/>
+        <alias index="145" name="" field="fclass_np"/>
+        <alias index="146" name="" field="fclass_pk"/>
+        <alias index="147" name="" field="fclass_de"/>
+        <alias index="148" name="" field="fclass_gb"/>
+        <alias index="149" name="" field="fclass_br"/>
+        <alias index="150" name="" field="fclass_il"/>
+        <alias index="151" name="" field="fclass_ps"/>
+        <alias index="152" name="" field="fclass_sa"/>
+        <alias index="153" name="" field="fclass_eg"/>
+        <alias index="154" name="" field="fclass_ma"/>
+        <alias index="155" name="" field="fclass_pt"/>
+        <alias index="156" name="" field="fclass_ar"/>
+        <alias index="157" name="" field="fclass_jp"/>
+        <alias index="158" name="" field="fclass_ko"/>
+        <alias index="159" name="" field="fclass_vn"/>
+        <alias index="160" name="" field="fclass_tr"/>
+        <alias index="161" name="" field="fclass_id"/>
+        <alias index="162" name="" field="fclass_pl"/>
+        <alias index="163" name="" field="fclass_gr"/>
+        <alias index="164" name="" field="fclass_it"/>
+        <alias index="165" name="" field="fclass_nl"/>
+        <alias index="166" name="" field="fclass_se"/>
+        <alias index="167" name="" field="fclass_bd"/>
+        <alias index="168" name="" field="fclass_ua"/>
+      </aliases>
+      <splitPolicies>
+        <policy policy="Duplicate" field="gid"/>
+        <policy policy="Duplicate" field="featurecla"/>
+        <policy policy="Duplicate" field="scalerank"/>
+        <policy policy="Duplicate" field="labelrank"/>
+        <policy policy="Duplicate" field="sovereignt"/>
+        <policy policy="Duplicate" field="sov_a3"/>
+        <policy policy="Duplicate" field="adm0_dif"/>
+        <policy policy="Duplicate" field="level"/>
+        <policy policy="Duplicate" field="type"/>
+        <policy policy="Duplicate" field="tlc"/>
+        <policy policy="Duplicate" field="admin"/>
+        <policy policy="Duplicate" field="adm0_a3"/>
+        <policy policy="Duplicate" field="geou_dif"/>
+        <policy policy="Duplicate" field="geounit"/>
+        <policy policy="Duplicate" field="gu_a3"/>
+        <policy policy="Duplicate" field="su_dif"/>
+        <policy policy="Duplicate" field="subunit"/>
+        <policy policy="Duplicate" field="su_a3"/>
+        <policy policy="Duplicate" field="brk_diff"/>
+        <policy policy="Duplicate" field="name"/>
+        <policy policy="Duplicate" field="name_long"/>
+        <policy policy="Duplicate" field="brk_a3"/>
+        <policy policy="Duplicate" field="brk_name"/>
+        <policy policy="Duplicate" field="brk_group"/>
+        <policy policy="Duplicate" field="abbrev"/>
+        <policy policy="Duplicate" field="postal"/>
+        <policy policy="Duplicate" field="formal_en"/>
+        <policy policy="Duplicate" field="formal_fr"/>
+        <policy policy="Duplicate" field="name_ciawf"/>
+        <policy policy="Duplicate" field="note_adm0"/>
+        <policy policy="Duplicate" field="note_brk"/>
+        <policy policy="Duplicate" field="name_sort"/>
+        <policy policy="Duplicate" field="name_alt"/>
+        <policy policy="Duplicate" field="mapcolor7"/>
+        <policy policy="Duplicate" field="mapcolor8"/>
+        <policy policy="Duplicate" field="mapcolor9"/>
+        <policy policy="Duplicate" field="mapcolor13"/>
+        <policy policy="Duplicate" field="pop_est"/>
+        <policy policy="Duplicate" field="pop_rank"/>
+        <policy policy="Duplicate" field="pop_year"/>
+        <policy policy="Duplicate" field="gdp_md"/>
+        <policy policy="Duplicate" field="gdp_year"/>
+        <policy policy="Duplicate" field="economy"/>
+        <policy policy="Duplicate" field="income_grp"/>
+        <policy policy="Duplicate" field="fips_10"/>
+        <policy policy="Duplicate" field="iso_a2"/>
+        <policy policy="Duplicate" field="iso_a2_eh"/>
+        <policy policy="Duplicate" field="iso_a3"/>
+        <policy policy="Duplicate" field="iso_a3_eh"/>
+        <policy policy="Duplicate" field="iso_n3"/>
+        <policy policy="Duplicate" field="iso_n3_eh"/>
+        <policy policy="Duplicate" field="un_a3"/>
+        <policy policy="Duplicate" field="wb_a2"/>
+        <policy policy="Duplicate" field="wb_a3"/>
+        <policy policy="Duplicate" field="woe_id"/>
+        <policy policy="Duplicate" field="woe_id_eh"/>
+        <policy policy="Duplicate" field="woe_note"/>
+        <policy policy="Duplicate" field="adm0_iso"/>
+        <policy policy="Duplicate" field="adm0_diff"/>
+        <policy policy="Duplicate" field="adm0_tlc"/>
+        <policy policy="Duplicate" field="adm0_a3_us"/>
+        <policy policy="Duplicate" field="adm0_a3_fr"/>
+        <policy policy="Duplicate" field="adm0_a3_ru"/>
+        <policy policy="Duplicate" field="adm0_a3_es"/>
+        <policy policy="Duplicate" field="adm0_a3_cn"/>
+        <policy policy="Duplicate" field="adm0_a3_tw"/>
+        <policy policy="Duplicate" field="adm0_a3_in"/>
+        <policy policy="Duplicate" field="adm0_a3_np"/>
+        <policy policy="Duplicate" field="adm0_a3_pk"/>
+        <policy policy="Duplicate" field="adm0_a3_de"/>
+        <policy policy="Duplicate" field="adm0_a3_gb"/>
+        <policy policy="Duplicate" field="adm0_a3_br"/>
+        <policy policy="Duplicate" field="adm0_a3_il"/>
+        <policy policy="Duplicate" field="adm0_a3_ps"/>
+        <policy policy="Duplicate" field="adm0_a3_sa"/>
+        <policy policy="Duplicate" field="adm0_a3_eg"/>
+        <policy policy="Duplicate" field="adm0_a3_ma"/>
+        <policy policy="Duplicate" field="adm0_a3_pt"/>
+        <policy policy="Duplicate" field="adm0_a3_ar"/>
+        <policy policy="Duplicate" field="adm0_a3_jp"/>
+        <policy policy="Duplicate" field="adm0_a3_ko"/>
+        <policy policy="Duplicate" field="adm0_a3_vn"/>
+        <policy policy="Duplicate" field="adm0_a3_tr"/>
+        <policy policy="Duplicate" field="adm0_a3_id"/>
+        <policy policy="Duplicate" field="adm0_a3_pl"/>
+        <policy policy="Duplicate" field="adm0_a3_gr"/>
+        <policy policy="Duplicate" field="adm0_a3_it"/>
+        <policy policy="Duplicate" field="adm0_a3_nl"/>
+        <policy policy="Duplicate" field="adm0_a3_se"/>
+        <policy policy="Duplicate" field="adm0_a3_bd"/>
+        <policy policy="Duplicate" field="adm0_a3_ua"/>
+        <policy policy="Duplicate" field="adm0_a3_un"/>
+        <policy policy="Duplicate" field="adm0_a3_wb"/>
+        <policy policy="Duplicate" field="continent"/>
+        <policy policy="Duplicate" field="region_un"/>
+        <policy policy="Duplicate" field="subregion"/>
+        <policy policy="Duplicate" field="region_wb"/>
+        <policy policy="Duplicate" field="name_len"/>
+        <policy policy="Duplicate" field="long_len"/>
+        <policy policy="Duplicate" field="abbrev_len"/>
+        <policy policy="Duplicate" field="tiny"/>
+        <policy policy="Duplicate" field="homepart"/>
+        <policy policy="Duplicate" field="min_zoom"/>
+        <policy policy="Duplicate" field="min_label"/>
+        <policy policy="Duplicate" field="max_label"/>
+        <policy policy="Duplicate" field="label_x"/>
+        <policy policy="Duplicate" field="label_y"/>
+        <policy policy="Duplicate" field="ne_id"/>
+        <policy policy="Duplicate" field="wikidataid"/>
+        <policy policy="Duplicate" field="name_ar"/>
+        <policy policy="Duplicate" field="name_bn"/>
+        <policy policy="Duplicate" field="name_de"/>
+        <policy policy="Duplicate" field="name_en"/>
+        <policy policy="Duplicate" field="name_es"/>
+        <policy policy="Duplicate" field="name_fa"/>
+        <policy policy="Duplicate" field="name_fr"/>
+        <policy policy="Duplicate" field="name_el"/>
+        <policy policy="Duplicate" field="name_he"/>
+        <policy policy="Duplicate" field="name_hi"/>
+        <policy policy="Duplicate" field="name_hu"/>
+        <policy policy="Duplicate" field="name_id"/>
+        <policy policy="Duplicate" field="name_it"/>
+        <policy policy="Duplicate" field="name_ja"/>
+        <policy policy="Duplicate" field="name_ko"/>
+        <policy policy="Duplicate" field="name_nl"/>
+        <policy policy="Duplicate" field="name_pl"/>
+        <policy policy="Duplicate" field="name_pt"/>
+        <policy policy="Duplicate" field="name_ru"/>
+        <policy policy="Duplicate" field="name_sv"/>
+        <policy policy="Duplicate" field="name_tr"/>
+        <policy policy="Duplicate" field="name_uk"/>
+        <policy policy="Duplicate" field="name_ur"/>
+        <policy policy="Duplicate" field="name_vi"/>
+        <policy policy="Duplicate" field="name_zh"/>
+        <policy policy="Duplicate" field="name_zht"/>
+        <policy policy="Duplicate" field="fclass_iso"/>
+        <policy policy="Duplicate" field="tlc_diff"/>
+        <policy policy="Duplicate" field="fclass_tlc"/>
+        <policy policy="Duplicate" field="fclass_us"/>
+        <policy policy="Duplicate" field="fclass_fr"/>
+        <policy policy="Duplicate" field="fclass_ru"/>
+        <policy policy="Duplicate" field="fclass_es"/>
+        <policy policy="Duplicate" field="fclass_cn"/>
+        <policy policy="Duplicate" field="fclass_tw"/>
+        <policy policy="Duplicate" field="fclass_in"/>
+        <policy policy="Duplicate" field="fclass_np"/>
+        <policy policy="Duplicate" field="fclass_pk"/>
+        <policy policy="Duplicate" field="fclass_de"/>
+        <policy policy="Duplicate" field="fclass_gb"/>
+        <policy policy="Duplicate" field="fclass_br"/>
+        <policy policy="Duplicate" field="fclass_il"/>
+        <policy policy="Duplicate" field="fclass_ps"/>
+        <policy policy="Duplicate" field="fclass_sa"/>
+        <policy policy="Duplicate" field="fclass_eg"/>
+        <policy policy="Duplicate" field="fclass_ma"/>
+        <policy policy="Duplicate" field="fclass_pt"/>
+        <policy policy="Duplicate" field="fclass_ar"/>
+        <policy policy="Duplicate" field="fclass_jp"/>
+        <policy policy="Duplicate" field="fclass_ko"/>
+        <policy policy="Duplicate" field="fclass_vn"/>
+        <policy policy="Duplicate" field="fclass_tr"/>
+        <policy policy="Duplicate" field="fclass_id"/>
+        <policy policy="Duplicate" field="fclass_pl"/>
+        <policy policy="Duplicate" field="fclass_gr"/>
+        <policy policy="Duplicate" field="fclass_it"/>
+        <policy policy="Duplicate" field="fclass_nl"/>
+        <policy policy="Duplicate" field="fclass_se"/>
+        <policy policy="Duplicate" field="fclass_bd"/>
+        <policy policy="Duplicate" field="fclass_ua"/>
+      </splitPolicies>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="gid"/>
+        <default applyOnUpdate="0" expression="" field="featurecla"/>
+        <default applyOnUpdate="0" expression="" field="scalerank"/>
+        <default applyOnUpdate="0" expression="" field="labelrank"/>
+        <default applyOnUpdate="0" expression="" field="sovereignt"/>
+        <default applyOnUpdate="0" expression="" field="sov_a3"/>
+        <default applyOnUpdate="0" expression="" field="adm0_dif"/>
+        <default applyOnUpdate="0" expression="" field="level"/>
+        <default applyOnUpdate="0" expression="" field="type"/>
+        <default applyOnUpdate="0" expression="" field="tlc"/>
+        <default applyOnUpdate="0" expression="" field="admin"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3"/>
+        <default applyOnUpdate="0" expression="" field="geou_dif"/>
+        <default applyOnUpdate="0" expression="" field="geounit"/>
+        <default applyOnUpdate="0" expression="" field="gu_a3"/>
+        <default applyOnUpdate="0" expression="" field="su_dif"/>
+        <default applyOnUpdate="0" expression="" field="subunit"/>
+        <default applyOnUpdate="0" expression="" field="su_a3"/>
+        <default applyOnUpdate="0" expression="" field="brk_diff"/>
+        <default applyOnUpdate="0" expression="" field="name"/>
+        <default applyOnUpdate="0" expression="" field="name_long"/>
+        <default applyOnUpdate="0" expression="" field="brk_a3"/>
+        <default applyOnUpdate="0" expression="" field="brk_name"/>
+        <default applyOnUpdate="0" expression="" field="brk_group"/>
+        <default applyOnUpdate="0" expression="" field="abbrev"/>
+        <default applyOnUpdate="0" expression="" field="postal"/>
+        <default applyOnUpdate="0" expression="" field="formal_en"/>
+        <default applyOnUpdate="0" expression="" field="formal_fr"/>
+        <default applyOnUpdate="0" expression="" field="name_ciawf"/>
+        <default applyOnUpdate="0" expression="" field="note_adm0"/>
+        <default applyOnUpdate="0" expression="" field="note_brk"/>
+        <default applyOnUpdate="0" expression="" field="name_sort"/>
+        <default applyOnUpdate="0" expression="" field="name_alt"/>
+        <default applyOnUpdate="0" expression="" field="mapcolor7"/>
+        <default applyOnUpdate="0" expression="" field="mapcolor8"/>
+        <default applyOnUpdate="0" expression="" field="mapcolor9"/>
+        <default applyOnUpdate="0" expression="" field="mapcolor13"/>
+        <default applyOnUpdate="0" expression="" field="pop_est"/>
+        <default applyOnUpdate="0" expression="" field="pop_rank"/>
+        <default applyOnUpdate="0" expression="" field="pop_year"/>
+        <default applyOnUpdate="0" expression="" field="gdp_md"/>
+        <default applyOnUpdate="0" expression="" field="gdp_year"/>
+        <default applyOnUpdate="0" expression="" field="economy"/>
+        <default applyOnUpdate="0" expression="" field="income_grp"/>
+        <default applyOnUpdate="0" expression="" field="fips_10"/>
+        <default applyOnUpdate="0" expression="" field="iso_a2"/>
+        <default applyOnUpdate="0" expression="" field="iso_a2_eh"/>
+        <default applyOnUpdate="0" expression="" field="iso_a3"/>
+        <default applyOnUpdate="0" expression="" field="iso_a3_eh"/>
+        <default applyOnUpdate="0" expression="" field="iso_n3"/>
+        <default applyOnUpdate="0" expression="" field="iso_n3_eh"/>
+        <default applyOnUpdate="0" expression="" field="un_a3"/>
+        <default applyOnUpdate="0" expression="" field="wb_a2"/>
+        <default applyOnUpdate="0" expression="" field="wb_a3"/>
+        <default applyOnUpdate="0" expression="" field="woe_id"/>
+        <default applyOnUpdate="0" expression="" field="woe_id_eh"/>
+        <default applyOnUpdate="0" expression="" field="woe_note"/>
+        <default applyOnUpdate="0" expression="" field="adm0_iso"/>
+        <default applyOnUpdate="0" expression="" field="adm0_diff"/>
+        <default applyOnUpdate="0" expression="" field="adm0_tlc"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_us"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_fr"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ru"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_es"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_cn"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_tw"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_in"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_np"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_pk"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_de"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_gb"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_br"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_il"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ps"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_sa"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_eg"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ma"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_pt"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ar"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_jp"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ko"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_vn"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_tr"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_id"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_pl"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_gr"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_it"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_nl"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_se"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_bd"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_ua"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_un"/>
+        <default applyOnUpdate="0" expression="" field="adm0_a3_wb"/>
+        <default applyOnUpdate="0" expression="" field="continent"/>
+        <default applyOnUpdate="0" expression="" field="region_un"/>
+        <default applyOnUpdate="0" expression="" field="subregion"/>
+        <default applyOnUpdate="0" expression="" field="region_wb"/>
+        <default applyOnUpdate="0" expression="" field="name_len"/>
+        <default applyOnUpdate="0" expression="" field="long_len"/>
+        <default applyOnUpdate="0" expression="" field="abbrev_len"/>
+        <default applyOnUpdate="0" expression="" field="tiny"/>
+        <default applyOnUpdate="0" expression="" field="homepart"/>
+        <default applyOnUpdate="0" expression="" field="min_zoom"/>
+        <default applyOnUpdate="0" expression="" field="min_label"/>
+        <default applyOnUpdate="0" expression="" field="max_label"/>
+        <default applyOnUpdate="0" expression="" field="label_x"/>
+        <default applyOnUpdate="0" expression="" field="label_y"/>
+        <default applyOnUpdate="0" expression="" field="ne_id"/>
+        <default applyOnUpdate="0" expression="" field="wikidataid"/>
+        <default applyOnUpdate="0" expression="" field="name_ar"/>
+        <default applyOnUpdate="0" expression="" field="name_bn"/>
+        <default applyOnUpdate="0" expression="" field="name_de"/>
+        <default applyOnUpdate="0" expression="" field="name_en"/>
+        <default applyOnUpdate="0" expression="" field="name_es"/>
+        <default applyOnUpdate="0" expression="" field="name_fa"/>
+        <default applyOnUpdate="0" expression="" field="name_fr"/>
+        <default applyOnUpdate="0" expression="" field="name_el"/>
+        <default applyOnUpdate="0" expression="" field="name_he"/>
+        <default applyOnUpdate="0" expression="" field="name_hi"/>
+        <default applyOnUpdate="0" expression="" field="name_hu"/>
+        <default applyOnUpdate="0" expression="" field="name_id"/>
+        <default applyOnUpdate="0" expression="" field="name_it"/>
+        <default applyOnUpdate="0" expression="" field="name_ja"/>
+        <default applyOnUpdate="0" expression="" field="name_ko"/>
+        <default applyOnUpdate="0" expression="" field="name_nl"/>
+        <default applyOnUpdate="0" expression="" field="name_pl"/>
+        <default applyOnUpdate="0" expression="" field="name_pt"/>
+        <default applyOnUpdate="0" expression="" field="name_ru"/>
+        <default applyOnUpdate="0" expression="" field="name_sv"/>
+        <default applyOnUpdate="0" expression="" field="name_tr"/>
+        <default applyOnUpdate="0" expression="" field="name_uk"/>
+        <default applyOnUpdate="0" expression="" field="name_ur"/>
+        <default applyOnUpdate="0" expression="" field="name_vi"/>
+        <default applyOnUpdate="0" expression="" field="name_zh"/>
+        <default applyOnUpdate="0" expression="" field="name_zht"/>
+        <default applyOnUpdate="0" expression="" field="fclass_iso"/>
+        <default applyOnUpdate="0" expression="" field="tlc_diff"/>
+        <default applyOnUpdate="0" expression="" field="fclass_tlc"/>
+        <default applyOnUpdate="0" expression="" field="fclass_us"/>
+        <default applyOnUpdate="0" expression="" field="fclass_fr"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ru"/>
+        <default applyOnUpdate="0" expression="" field="fclass_es"/>
+        <default applyOnUpdate="0" expression="" field="fclass_cn"/>
+        <default applyOnUpdate="0" expression="" field="fclass_tw"/>
+        <default applyOnUpdate="0" expression="" field="fclass_in"/>
+        <default applyOnUpdate="0" expression="" field="fclass_np"/>
+        <default applyOnUpdate="0" expression="" field="fclass_pk"/>
+        <default applyOnUpdate="0" expression="" field="fclass_de"/>
+        <default applyOnUpdate="0" expression="" field="fclass_gb"/>
+        <default applyOnUpdate="0" expression="" field="fclass_br"/>
+        <default applyOnUpdate="0" expression="" field="fclass_il"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ps"/>
+        <default applyOnUpdate="0" expression="" field="fclass_sa"/>
+        <default applyOnUpdate="0" expression="" field="fclass_eg"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ma"/>
+        <default applyOnUpdate="0" expression="" field="fclass_pt"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ar"/>
+        <default applyOnUpdate="0" expression="" field="fclass_jp"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ko"/>
+        <default applyOnUpdate="0" expression="" field="fclass_vn"/>
+        <default applyOnUpdate="0" expression="" field="fclass_tr"/>
+        <default applyOnUpdate="0" expression="" field="fclass_id"/>
+        <default applyOnUpdate="0" expression="" field="fclass_pl"/>
+        <default applyOnUpdate="0" expression="" field="fclass_gr"/>
+        <default applyOnUpdate="0" expression="" field="fclass_it"/>
+        <default applyOnUpdate="0" expression="" field="fclass_nl"/>
+        <default applyOnUpdate="0" expression="" field="fclass_se"/>
+        <default applyOnUpdate="0" expression="" field="fclass_bd"/>
+        <default applyOnUpdate="0" expression="" field="fclass_ua"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" constraints="3" field="gid"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="featurecla"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="scalerank"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="labelrank"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="sovereignt"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="sov_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_dif"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="level"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="type"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="tlc"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="admin"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="geou_dif"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="geounit"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gu_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="su_dif"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="subunit"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="su_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="brk_diff"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_long"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="brk_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="brk_name"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="brk_group"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="abbrev"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="postal"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="formal_en"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="formal_fr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ciawf"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="note_adm0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="note_brk"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_sort"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_alt"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="mapcolor7"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="mapcolor8"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="mapcolor9"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="mapcolor13"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="pop_est"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="pop_rank"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="pop_year"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gdp_md"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gdp_year"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="economy"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="income_grp"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fips_10"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_a2"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_a2_eh"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_a3_eh"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_n3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="iso_n3_eh"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="un_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wb_a2"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wb_a3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="woe_id"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="woe_id_eh"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="woe_note"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_iso"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_diff"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_tlc"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_us"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_fr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ru"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_es"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_cn"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_tw"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_in"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_np"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_pk"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_de"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_gb"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_br"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_il"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ps"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_sa"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_eg"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ma"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_pt"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ar"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_jp"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ko"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_vn"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_tr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_id"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_pl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_gr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_it"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_nl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_se"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_bd"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_ua"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_un"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="adm0_a3_wb"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="continent"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="region_un"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="subregion"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="region_wb"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_len"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="long_len"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="abbrev_len"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="tiny"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="homepart"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="min_zoom"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="min_label"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="max_label"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="label_x"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="label_y"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="ne_id"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wikidataid"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ar"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_bn"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_de"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_en"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_es"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_fa"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_fr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_el"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_he"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_hi"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_hu"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_id"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_it"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ja"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ko"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_nl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_pl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_pt"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ru"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_sv"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_tr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_uk"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_ur"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_vi"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_zh"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="name_zht"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_iso"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="tlc_diff"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_tlc"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_us"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_fr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ru"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_es"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_cn"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_tw"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_in"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_np"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_pk"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_de"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_gb"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_br"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_il"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ps"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_sa"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_eg"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ma"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_pt"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ar"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_jp"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ko"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_vn"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_tr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_id"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_pl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_gr"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_it"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_nl"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_se"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_bd"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="fclass_ua"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="gid"/>
+        <constraint exp="" desc="" field="featurecla"/>
+        <constraint exp="" desc="" field="scalerank"/>
+        <constraint exp="" desc="" field="labelrank"/>
+        <constraint exp="" desc="" field="sovereignt"/>
+        <constraint exp="" desc="" field="sov_a3"/>
+        <constraint exp="" desc="" field="adm0_dif"/>
+        <constraint exp="" desc="" field="level"/>
+        <constraint exp="" desc="" field="type"/>
+        <constraint exp="" desc="" field="tlc"/>
+        <constraint exp="" desc="" field="admin"/>
+        <constraint exp="" desc="" field="adm0_a3"/>
+        <constraint exp="" desc="" field="geou_dif"/>
+        <constraint exp="" desc="" field="geounit"/>
+        <constraint exp="" desc="" field="gu_a3"/>
+        <constraint exp="" desc="" field="su_dif"/>
+        <constraint exp="" desc="" field="subunit"/>
+        <constraint exp="" desc="" field="su_a3"/>
+        <constraint exp="" desc="" field="brk_diff"/>
+        <constraint exp="" desc="" field="name"/>
+        <constraint exp="" desc="" field="name_long"/>
+        <constraint exp="" desc="" field="brk_a3"/>
+        <constraint exp="" desc="" field="brk_name"/>
+        <constraint exp="" desc="" field="brk_group"/>
+        <constraint exp="" desc="" field="abbrev"/>
+        <constraint exp="" desc="" field="postal"/>
+        <constraint exp="" desc="" field="formal_en"/>
+        <constraint exp="" desc="" field="formal_fr"/>
+        <constraint exp="" desc="" field="name_ciawf"/>
+        <constraint exp="" desc="" field="note_adm0"/>
+        <constraint exp="" desc="" field="note_brk"/>
+        <constraint exp="" desc="" field="name_sort"/>
+        <constraint exp="" desc="" field="name_alt"/>
+        <constraint exp="" desc="" field="mapcolor7"/>
+        <constraint exp="" desc="" field="mapcolor8"/>
+        <constraint exp="" desc="" field="mapcolor9"/>
+        <constraint exp="" desc="" field="mapcolor13"/>
+        <constraint exp="" desc="" field="pop_est"/>
+        <constraint exp="" desc="" field="pop_rank"/>
+        <constraint exp="" desc="" field="pop_year"/>
+        <constraint exp="" desc="" field="gdp_md"/>
+        <constraint exp="" desc="" field="gdp_year"/>
+        <constraint exp="" desc="" field="economy"/>
+        <constraint exp="" desc="" field="income_grp"/>
+        <constraint exp="" desc="" field="fips_10"/>
+        <constraint exp="" desc="" field="iso_a2"/>
+        <constraint exp="" desc="" field="iso_a2_eh"/>
+        <constraint exp="" desc="" field="iso_a3"/>
+        <constraint exp="" desc="" field="iso_a3_eh"/>
+        <constraint exp="" desc="" field="iso_n3"/>
+        <constraint exp="" desc="" field="iso_n3_eh"/>
+        <constraint exp="" desc="" field="un_a3"/>
+        <constraint exp="" desc="" field="wb_a2"/>
+        <constraint exp="" desc="" field="wb_a3"/>
+        <constraint exp="" desc="" field="woe_id"/>
+        <constraint exp="" desc="" field="woe_id_eh"/>
+        <constraint exp="" desc="" field="woe_note"/>
+        <constraint exp="" desc="" field="adm0_iso"/>
+        <constraint exp="" desc="" field="adm0_diff"/>
+        <constraint exp="" desc="" field="adm0_tlc"/>
+        <constraint exp="" desc="" field="adm0_a3_us"/>
+        <constraint exp="" desc="" field="adm0_a3_fr"/>
+        <constraint exp="" desc="" field="adm0_a3_ru"/>
+        <constraint exp="" desc="" field="adm0_a3_es"/>
+        <constraint exp="" desc="" field="adm0_a3_cn"/>
+        <constraint exp="" desc="" field="adm0_a3_tw"/>
+        <constraint exp="" desc="" field="adm0_a3_in"/>
+        <constraint exp="" desc="" field="adm0_a3_np"/>
+        <constraint exp="" desc="" field="adm0_a3_pk"/>
+        <constraint exp="" desc="" field="adm0_a3_de"/>
+        <constraint exp="" desc="" field="adm0_a3_gb"/>
+        <constraint exp="" desc="" field="adm0_a3_br"/>
+        <constraint exp="" desc="" field="adm0_a3_il"/>
+        <constraint exp="" desc="" field="adm0_a3_ps"/>
+        <constraint exp="" desc="" field="adm0_a3_sa"/>
+        <constraint exp="" desc="" field="adm0_a3_eg"/>
+        <constraint exp="" desc="" field="adm0_a3_ma"/>
+        <constraint exp="" desc="" field="adm0_a3_pt"/>
+        <constraint exp="" desc="" field="adm0_a3_ar"/>
+        <constraint exp="" desc="" field="adm0_a3_jp"/>
+        <constraint exp="" desc="" field="adm0_a3_ko"/>
+        <constraint exp="" desc="" field="adm0_a3_vn"/>
+        <constraint exp="" desc="" field="adm0_a3_tr"/>
+        <constraint exp="" desc="" field="adm0_a3_id"/>
+        <constraint exp="" desc="" field="adm0_a3_pl"/>
+        <constraint exp="" desc="" field="adm0_a3_gr"/>
+        <constraint exp="" desc="" field="adm0_a3_it"/>
+        <constraint exp="" desc="" field="adm0_a3_nl"/>
+        <constraint exp="" desc="" field="adm0_a3_se"/>
+        <constraint exp="" desc="" field="adm0_a3_bd"/>
+        <constraint exp="" desc="" field="adm0_a3_ua"/>
+        <constraint exp="" desc="" field="adm0_a3_un"/>
+        <constraint exp="" desc="" field="adm0_a3_wb"/>
+        <constraint exp="" desc="" field="continent"/>
+        <constraint exp="" desc="" field="region_un"/>
+        <constraint exp="" desc="" field="subregion"/>
+        <constraint exp="" desc="" field="region_wb"/>
+        <constraint exp="" desc="" field="name_len"/>
+        <constraint exp="" desc="" field="long_len"/>
+        <constraint exp="" desc="" field="abbrev_len"/>
+        <constraint exp="" desc="" field="tiny"/>
+        <constraint exp="" desc="" field="homepart"/>
+        <constraint exp="" desc="" field="min_zoom"/>
+        <constraint exp="" desc="" field="min_label"/>
+        <constraint exp="" desc="" field="max_label"/>
+        <constraint exp="" desc="" field="label_x"/>
+        <constraint exp="" desc="" field="label_y"/>
+        <constraint exp="" desc="" field="ne_id"/>
+        <constraint exp="" desc="" field="wikidataid"/>
+        <constraint exp="" desc="" field="name_ar"/>
+        <constraint exp="" desc="" field="name_bn"/>
+        <constraint exp="" desc="" field="name_de"/>
+        <constraint exp="" desc="" field="name_en"/>
+        <constraint exp="" desc="" field="name_es"/>
+        <constraint exp="" desc="" field="name_fa"/>
+        <constraint exp="" desc="" field="name_fr"/>
+        <constraint exp="" desc="" field="name_el"/>
+        <constraint exp="" desc="" field="name_he"/>
+        <constraint exp="" desc="" field="name_hi"/>
+        <constraint exp="" desc="" field="name_hu"/>
+        <constraint exp="" desc="" field="name_id"/>
+        <constraint exp="" desc="" field="name_it"/>
+        <constraint exp="" desc="" field="name_ja"/>
+        <constraint exp="" desc="" field="name_ko"/>
+        <constraint exp="" desc="" field="name_nl"/>
+        <constraint exp="" desc="" field="name_pl"/>
+        <constraint exp="" desc="" field="name_pt"/>
+        <constraint exp="" desc="" field="name_ru"/>
+        <constraint exp="" desc="" field="name_sv"/>
+        <constraint exp="" desc="" field="name_tr"/>
+        <constraint exp="" desc="" field="name_uk"/>
+        <constraint exp="" desc="" field="name_ur"/>
+        <constraint exp="" desc="" field="name_vi"/>
+        <constraint exp="" desc="" field="name_zh"/>
+        <constraint exp="" desc="" field="name_zht"/>
+        <constraint exp="" desc="" field="fclass_iso"/>
+        <constraint exp="" desc="" field="tlc_diff"/>
+        <constraint exp="" desc="" field="fclass_tlc"/>
+        <constraint exp="" desc="" field="fclass_us"/>
+        <constraint exp="" desc="" field="fclass_fr"/>
+        <constraint exp="" desc="" field="fclass_ru"/>
+        <constraint exp="" desc="" field="fclass_es"/>
+        <constraint exp="" desc="" field="fclass_cn"/>
+        <constraint exp="" desc="" field="fclass_tw"/>
+        <constraint exp="" desc="" field="fclass_in"/>
+        <constraint exp="" desc="" field="fclass_np"/>
+        <constraint exp="" desc="" field="fclass_pk"/>
+        <constraint exp="" desc="" field="fclass_de"/>
+        <constraint exp="" desc="" field="fclass_gb"/>
+        <constraint exp="" desc="" field="fclass_br"/>
+        <constraint exp="" desc="" field="fclass_il"/>
+        <constraint exp="" desc="" field="fclass_ps"/>
+        <constraint exp="" desc="" field="fclass_sa"/>
+        <constraint exp="" desc="" field="fclass_eg"/>
+        <constraint exp="" desc="" field="fclass_ma"/>
+        <constraint exp="" desc="" field="fclass_pt"/>
+        <constraint exp="" desc="" field="fclass_ar"/>
+        <constraint exp="" desc="" field="fclass_jp"/>
+        <constraint exp="" desc="" field="fclass_ko"/>
+        <constraint exp="" desc="" field="fclass_vn"/>
+        <constraint exp="" desc="" field="fclass_tr"/>
+        <constraint exp="" desc="" field="fclass_id"/>
+        <constraint exp="" desc="" field="fclass_pl"/>
+        <constraint exp="" desc="" field="fclass_gr"/>
+        <constraint exp="" desc="" field="fclass_it"/>
+        <constraint exp="" desc="" field="fclass_nl"/>
+        <constraint exp="" desc="" field="fclass_se"/>
+        <constraint exp="" desc="" field="fclass_bd"/>
+        <constraint exp="" desc="" field="fclass_ua"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column type="field" name="gid" width="-1" hidden="0"/>
+          <column type="field" name="featurecla" width="-1" hidden="0"/>
+          <column type="field" name="scalerank" width="-1" hidden="0"/>
+          <column type="field" name="labelrank" width="-1" hidden="0"/>
+          <column type="field" name="sovereignt" width="-1" hidden="0"/>
+          <column type="field" name="sov_a3" width="-1" hidden="0"/>
+          <column type="field" name="adm0_dif" width="-1" hidden="0"/>
+          <column type="field" name="level" width="-1" hidden="0"/>
+          <column type="field" name="type" width="-1" hidden="0"/>
+          <column type="field" name="tlc" width="-1" hidden="0"/>
+          <column type="field" name="admin" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3" width="-1" hidden="0"/>
+          <column type="field" name="geou_dif" width="-1" hidden="0"/>
+          <column type="field" name="geounit" width="-1" hidden="0"/>
+          <column type="field" name="gu_a3" width="-1" hidden="0"/>
+          <column type="field" name="su_dif" width="-1" hidden="0"/>
+          <column type="field" name="subunit" width="-1" hidden="0"/>
+          <column type="field" name="su_a3" width="-1" hidden="0"/>
+          <column type="field" name="brk_diff" width="-1" hidden="0"/>
+          <column type="field" name="name" width="-1" hidden="0"/>
+          <column type="field" name="name_long" width="-1" hidden="0"/>
+          <column type="field" name="brk_a3" width="-1" hidden="0"/>
+          <column type="field" name="brk_name" width="-1" hidden="0"/>
+          <column type="field" name="brk_group" width="-1" hidden="0"/>
+          <column type="field" name="abbrev" width="-1" hidden="0"/>
+          <column type="field" name="postal" width="-1" hidden="0"/>
+          <column type="field" name="formal_en" width="-1" hidden="0"/>
+          <column type="field" name="formal_fr" width="-1" hidden="0"/>
+          <column type="field" name="name_ciawf" width="-1" hidden="0"/>
+          <column type="field" name="note_adm0" width="-1" hidden="0"/>
+          <column type="field" name="note_brk" width="-1" hidden="0"/>
+          <column type="field" name="name_sort" width="-1" hidden="0"/>
+          <column type="field" name="name_alt" width="-1" hidden="0"/>
+          <column type="field" name="mapcolor7" width="-1" hidden="0"/>
+          <column type="field" name="mapcolor8" width="-1" hidden="0"/>
+          <column type="field" name="mapcolor9" width="-1" hidden="0"/>
+          <column type="field" name="mapcolor13" width="-1" hidden="0"/>
+          <column type="field" name="pop_est" width="-1" hidden="0"/>
+          <column type="field" name="pop_rank" width="-1" hidden="0"/>
+          <column type="field" name="pop_year" width="-1" hidden="0"/>
+          <column type="field" name="gdp_md" width="-1" hidden="0"/>
+          <column type="field" name="gdp_year" width="-1" hidden="0"/>
+          <column type="field" name="economy" width="-1" hidden="0"/>
+          <column type="field" name="income_grp" width="-1" hidden="0"/>
+          <column type="field" name="fips_10" width="-1" hidden="0"/>
+          <column type="field" name="iso_a2" width="-1" hidden="0"/>
+          <column type="field" name="iso_a2_eh" width="-1" hidden="0"/>
+          <column type="field" name="iso_a3" width="-1" hidden="0"/>
+          <column type="field" name="iso_a3_eh" width="-1" hidden="0"/>
+          <column type="field" name="iso_n3" width="-1" hidden="0"/>
+          <column type="field" name="iso_n3_eh" width="-1" hidden="0"/>
+          <column type="field" name="un_a3" width="-1" hidden="0"/>
+          <column type="field" name="wb_a2" width="-1" hidden="0"/>
+          <column type="field" name="wb_a3" width="-1" hidden="0"/>
+          <column type="field" name="woe_id" width="-1" hidden="0"/>
+          <column type="field" name="woe_id_eh" width="-1" hidden="0"/>
+          <column type="field" name="woe_note" width="-1" hidden="0"/>
+          <column type="field" name="adm0_iso" width="-1" hidden="0"/>
+          <column type="field" name="adm0_diff" width="-1" hidden="0"/>
+          <column type="field" name="adm0_tlc" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_us" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_fr" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ru" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_es" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_cn" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_tw" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_in" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_np" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_pk" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_de" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_gb" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_br" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_il" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ps" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_sa" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_eg" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ma" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_pt" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ar" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_jp" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ko" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_vn" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_tr" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_id" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_pl" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_gr" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_it" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_nl" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_se" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_bd" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_ua" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_un" width="-1" hidden="0"/>
+          <column type="field" name="adm0_a3_wb" width="-1" hidden="0"/>
+          <column type="field" name="continent" width="-1" hidden="0"/>
+          <column type="field" name="region_un" width="-1" hidden="0"/>
+          <column type="field" name="subregion" width="-1" hidden="0"/>
+          <column type="field" name="region_wb" width="-1" hidden="0"/>
+          <column type="field" name="name_len" width="-1" hidden="0"/>
+          <column type="field" name="long_len" width="-1" hidden="0"/>
+          <column type="field" name="abbrev_len" width="-1" hidden="0"/>
+          <column type="field" name="tiny" width="-1" hidden="0"/>
+          <column type="field" name="homepart" width="-1" hidden="0"/>
+          <column type="field" name="min_zoom" width="-1" hidden="0"/>
+          <column type="field" name="min_label" width="-1" hidden="0"/>
+          <column type="field" name="max_label" width="-1" hidden="0"/>
+          <column type="field" name="label_x" width="-1" hidden="0"/>
+          <column type="field" name="label_y" width="-1" hidden="0"/>
+          <column type="field" name="ne_id" width="-1" hidden="0"/>
+          <column type="field" name="wikidataid" width="-1" hidden="0"/>
+          <column type="field" name="name_ar" width="-1" hidden="0"/>
+          <column type="field" name="name_bn" width="-1" hidden="0"/>
+          <column type="field" name="name_de" width="-1" hidden="0"/>
+          <column type="field" name="name_en" width="-1" hidden="0"/>
+          <column type="field" name="name_es" width="-1" hidden="0"/>
+          <column type="field" name="name_fa" width="-1" hidden="0"/>
+          <column type="field" name="name_fr" width="-1" hidden="0"/>
+          <column type="field" name="name_el" width="-1" hidden="0"/>
+          <column type="field" name="name_he" width="-1" hidden="0"/>
+          <column type="field" name="name_hi" width="-1" hidden="0"/>
+          <column type="field" name="name_hu" width="-1" hidden="0"/>
+          <column type="field" name="name_id" width="-1" hidden="0"/>
+          <column type="field" name="name_it" width="-1" hidden="0"/>
+          <column type="field" name="name_ja" width="-1" hidden="0"/>
+          <column type="field" name="name_ko" width="-1" hidden="0"/>
+          <column type="field" name="name_nl" width="-1" hidden="0"/>
+          <column type="field" name="name_pl" width="-1" hidden="0"/>
+          <column type="field" name="name_pt" width="-1" hidden="0"/>
+          <column type="field" name="name_ru" width="-1" hidden="0"/>
+          <column type="field" name="name_sv" width="-1" hidden="0"/>
+          <column type="field" name="name_tr" width="-1" hidden="0"/>
+          <column type="field" name="name_uk" width="-1" hidden="0"/>
+          <column type="field" name="name_ur" width="-1" hidden="0"/>
+          <column type="field" name="name_vi" width="-1" hidden="0"/>
+          <column type="field" name="name_zh" width="-1" hidden="0"/>
+          <column type="field" name="name_zht" width="-1" hidden="0"/>
+          <column type="field" name="fclass_iso" width="-1" hidden="0"/>
+          <column type="field" name="tlc_diff" width="-1" hidden="0"/>
+          <column type="field" name="fclass_tlc" width="-1" hidden="0"/>
+          <column type="field" name="fclass_us" width="-1" hidden="0"/>
+          <column type="field" name="fclass_fr" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ru" width="-1" hidden="0"/>
+          <column type="field" name="fclass_es" width="-1" hidden="0"/>
+          <column type="field" name="fclass_cn" width="-1" hidden="0"/>
+          <column type="field" name="fclass_tw" width="-1" hidden="0"/>
+          <column type="field" name="fclass_in" width="-1" hidden="0"/>
+          <column type="field" name="fclass_np" width="-1" hidden="0"/>
+          <column type="field" name="fclass_pk" width="-1" hidden="0"/>
+          <column type="field" name="fclass_de" width="-1" hidden="0"/>
+          <column type="field" name="fclass_gb" width="-1" hidden="0"/>
+          <column type="field" name="fclass_br" width="-1" hidden="0"/>
+          <column type="field" name="fclass_il" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ps" width="-1" hidden="0"/>
+          <column type="field" name="fclass_sa" width="-1" hidden="0"/>
+          <column type="field" name="fclass_eg" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ma" width="-1" hidden="0"/>
+          <column type="field" name="fclass_pt" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ar" width="-1" hidden="0"/>
+          <column type="field" name="fclass_jp" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ko" width="-1" hidden="0"/>
+          <column type="field" name="fclass_vn" width="-1" hidden="0"/>
+          <column type="field" name="fclass_tr" width="-1" hidden="0"/>
+          <column type="field" name="fclass_id" width="-1" hidden="0"/>
+          <column type="field" name="fclass_pl" width="-1" hidden="0"/>
+          <column type="field" name="fclass_gr" width="-1" hidden="0"/>
+          <column type="field" name="fclass_it" width="-1" hidden="0"/>
+          <column type="field" name="fclass_nl" width="-1" hidden="0"/>
+          <column type="field" name="fclass_se" width="-1" hidden="0"/>
+          <column type="field" name="fclass_bd" width="-1" hidden="0"/>
+          <column type="field" name="fclass_ua" width="-1" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="abbrev"/>
+        <field editable="1" name="abbrev_len"/>
+        <field editable="1" name="adm0_a3"/>
+        <field editable="1" name="adm0_a3_ar"/>
+        <field editable="1" name="adm0_a3_bd"/>
+        <field editable="1" name="adm0_a3_br"/>
+        <field editable="1" name="adm0_a3_cn"/>
+        <field editable="1" name="adm0_a3_de"/>
+        <field editable="1" name="adm0_a3_eg"/>
+        <field editable="1" name="adm0_a3_es"/>
+        <field editable="1" name="adm0_a3_fr"/>
+        <field editable="1" name="adm0_a3_gb"/>
+        <field editable="1" name="adm0_a3_gr"/>
+        <field editable="1" name="adm0_a3_id"/>
+        <field editable="1" name="adm0_a3_il"/>
+        <field editable="1" name="adm0_a3_in"/>
+        <field editable="1" name="adm0_a3_it"/>
+        <field editable="1" name="adm0_a3_jp"/>
+        <field editable="1" name="adm0_a3_ko"/>
+        <field editable="1" name="adm0_a3_ma"/>
+        <field editable="1" name="adm0_a3_nl"/>
+        <field editable="1" name="adm0_a3_np"/>
+        <field editable="1" name="adm0_a3_pk"/>
+        <field editable="1" name="adm0_a3_pl"/>
+        <field editable="1" name="adm0_a3_ps"/>
+        <field editable="1" name="adm0_a3_pt"/>
+        <field editable="1" name="adm0_a3_ru"/>
+        <field editable="1" name="adm0_a3_sa"/>
+        <field editable="1" name="adm0_a3_se"/>
+        <field editable="1" name="adm0_a3_tr"/>
+        <field editable="1" name="adm0_a3_tw"/>
+        <field editable="1" name="adm0_a3_ua"/>
+        <field editable="1" name="adm0_a3_un"/>
+        <field editable="1" name="adm0_a3_us"/>
+        <field editable="1" name="adm0_a3_vn"/>
+        <field editable="1" name="adm0_a3_wb"/>
+        <field editable="1" name="adm0_dif"/>
+        <field editable="1" name="adm0_diff"/>
+        <field editable="1" name="adm0_iso"/>
+        <field editable="1" name="adm0_tlc"/>
+        <field editable="1" name="admin"/>
+        <field editable="1" name="brk_a3"/>
+        <field editable="1" name="brk_diff"/>
+        <field editable="1" name="brk_group"/>
+        <field editable="1" name="brk_name"/>
+        <field editable="1" name="continent"/>
+        <field editable="1" name="economy"/>
+        <field editable="1" name="fclass_ar"/>
+        <field editable="1" name="fclass_bd"/>
+        <field editable="1" name="fclass_br"/>
+        <field editable="1" name="fclass_cn"/>
+        <field editable="1" name="fclass_de"/>
+        <field editable="1" name="fclass_eg"/>
+        <field editable="1" name="fclass_es"/>
+        <field editable="1" name="fclass_fr"/>
+        <field editable="1" name="fclass_gb"/>
+        <field editable="1" name="fclass_gr"/>
+        <field editable="1" name="fclass_id"/>
+        <field editable="1" name="fclass_il"/>
+        <field editable="1" name="fclass_in"/>
+        <field editable="1" name="fclass_iso"/>
+        <field editable="1" name="fclass_it"/>
+        <field editable="1" name="fclass_jp"/>
+        <field editable="1" name="fclass_ko"/>
+        <field editable="1" name="fclass_ma"/>
+        <field editable="1" name="fclass_nl"/>
+        <field editable="1" name="fclass_np"/>
+        <field editable="1" name="fclass_pk"/>
+        <field editable="1" name="fclass_pl"/>
+        <field editable="1" name="fclass_ps"/>
+        <field editable="1" name="fclass_pt"/>
+        <field editable="1" name="fclass_ru"/>
+        <field editable="1" name="fclass_sa"/>
+        <field editable="1" name="fclass_se"/>
+        <field editable="1" name="fclass_tlc"/>
+        <field editable="1" name="fclass_tr"/>
+        <field editable="1" name="fclass_tw"/>
+        <field editable="1" name="fclass_ua"/>
+        <field editable="1" name="fclass_us"/>
+        <field editable="1" name="fclass_vn"/>
+        <field editable="1" name="featurecla"/>
+        <field editable="1" name="fips_10"/>
+        <field editable="1" name="formal_en"/>
+        <field editable="1" name="formal_fr"/>
+        <field editable="1" name="gdp_md"/>
+        <field editable="1" name="gdp_year"/>
+        <field editable="1" name="geou_dif"/>
+        <field editable="1" name="geounit"/>
+        <field editable="1" name="gid"/>
+        <field editable="1" name="gu_a3"/>
+        <field editable="1" name="homepart"/>
+        <field editable="1" name="income_grp"/>
+        <field editable="1" name="iso_a2"/>
+        <field editable="1" name="iso_a2_eh"/>
+        <field editable="1" name="iso_a3"/>
+        <field editable="1" name="iso_a3_eh"/>
+        <field editable="1" name="iso_n3"/>
+        <field editable="1" name="iso_n3_eh"/>
+        <field editable="1" name="label_x"/>
+        <field editable="1" name="label_y"/>
+        <field editable="1" name="labelrank"/>
+        <field editable="1" name="level"/>
+        <field editable="1" name="long_len"/>
+        <field editable="1" name="mapcolor13"/>
+        <field editable="1" name="mapcolor7"/>
+        <field editable="1" name="mapcolor8"/>
+        <field editable="1" name="mapcolor9"/>
+        <field editable="1" name="max_label"/>
+        <field editable="1" name="min_label"/>
+        <field editable="1" name="min_zoom"/>
+        <field editable="1" name="name"/>
+        <field editable="1" name="name_alt"/>
+        <field editable="1" name="name_ar"/>
+        <field editable="1" name="name_bn"/>
+        <field editable="1" name="name_ciawf"/>
+        <field editable="1" name="name_de"/>
+        <field editable="1" name="name_el"/>
+        <field editable="1" name="name_en"/>
+        <field editable="1" name="name_es"/>
+        <field editable="1" name="name_fa"/>
+        <field editable="1" name="name_fr"/>
+        <field editable="1" name="name_he"/>
+        <field editable="1" name="name_hi"/>
+        <field editable="1" name="name_hu"/>
+        <field editable="1" name="name_id"/>
+        <field editable="1" name="name_it"/>
+        <field editable="1" name="name_ja"/>
+        <field editable="1" name="name_ko"/>
+        <field editable="1" name="name_len"/>
+        <field editable="1" name="name_long"/>
+        <field editable="1" name="name_nl"/>
+        <field editable="1" name="name_pl"/>
+        <field editable="1" name="name_pt"/>
+        <field editable="1" name="name_ru"/>
+        <field editable="1" name="name_sort"/>
+        <field editable="1" name="name_sv"/>
+        <field editable="1" name="name_tr"/>
+        <field editable="1" name="name_uk"/>
+        <field editable="1" name="name_ur"/>
+        <field editable="1" name="name_vi"/>
+        <field editable="1" name="name_zh"/>
+        <field editable="1" name="name_zht"/>
+        <field editable="1" name="ne_id"/>
+        <field editable="1" name="note_adm0"/>
+        <field editable="1" name="note_brk"/>
+        <field editable="1" name="pop_est"/>
+        <field editable="1" name="pop_rank"/>
+        <field editable="1" name="pop_year"/>
+        <field editable="1" name="postal"/>
+        <field editable="1" name="region_un"/>
+        <field editable="1" name="region_wb"/>
+        <field editable="1" name="scalerank"/>
+        <field editable="1" name="sov_a3"/>
+        <field editable="1" name="sovereignt"/>
+        <field editable="1" name="su_a3"/>
+        <field editable="1" name="su_dif"/>
+        <field editable="1" name="subregion"/>
+        <field editable="1" name="subunit"/>
+        <field editable="1" name="tiny"/>
+        <field editable="1" name="tlc"/>
+        <field editable="1" name="tlc_diff"/>
+        <field editable="1" name="type"/>
+        <field editable="1" name="un_a3"/>
+        <field editable="1" name="wb_a2"/>
+        <field editable="1" name="wb_a3"/>
+        <field editable="1" name="wikidataid"/>
+        <field editable="1" name="woe_id"/>
+        <field editable="1" name="woe_id_eh"/>
+        <field editable="1" name="woe_note"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="abbrev"/>
+        <field labelOnTop="0" name="abbrev_len"/>
+        <field labelOnTop="0" name="adm0_a3"/>
+        <field labelOnTop="0" name="adm0_a3_ar"/>
+        <field labelOnTop="0" name="adm0_a3_bd"/>
+        <field labelOnTop="0" name="adm0_a3_br"/>
+        <field labelOnTop="0" name="adm0_a3_cn"/>
+        <field labelOnTop="0" name="adm0_a3_de"/>
+        <field labelOnTop="0" name="adm0_a3_eg"/>
+        <field labelOnTop="0" name="adm0_a3_es"/>
+        <field labelOnTop="0" name="adm0_a3_fr"/>
+        <field labelOnTop="0" name="adm0_a3_gb"/>
+        <field labelOnTop="0" name="adm0_a3_gr"/>
+        <field labelOnTop="0" name="adm0_a3_id"/>
+        <field labelOnTop="0" name="adm0_a3_il"/>
+        <field labelOnTop="0" name="adm0_a3_in"/>
+        <field labelOnTop="0" name="adm0_a3_it"/>
+        <field labelOnTop="0" name="adm0_a3_jp"/>
+        <field labelOnTop="0" name="adm0_a3_ko"/>
+        <field labelOnTop="0" name="adm0_a3_ma"/>
+        <field labelOnTop="0" name="adm0_a3_nl"/>
+        <field labelOnTop="0" name="adm0_a3_np"/>
+        <field labelOnTop="0" name="adm0_a3_pk"/>
+        <field labelOnTop="0" name="adm0_a3_pl"/>
+        <field labelOnTop="0" name="adm0_a3_ps"/>
+        <field labelOnTop="0" name="adm0_a3_pt"/>
+        <field labelOnTop="0" name="adm0_a3_ru"/>
+        <field labelOnTop="0" name="adm0_a3_sa"/>
+        <field labelOnTop="0" name="adm0_a3_se"/>
+        <field labelOnTop="0" name="adm0_a3_tr"/>
+        <field labelOnTop="0" name="adm0_a3_tw"/>
+        <field labelOnTop="0" name="adm0_a3_ua"/>
+        <field labelOnTop="0" name="adm0_a3_un"/>
+        <field labelOnTop="0" name="adm0_a3_us"/>
+        <field labelOnTop="0" name="adm0_a3_vn"/>
+        <field labelOnTop="0" name="adm0_a3_wb"/>
+        <field labelOnTop="0" name="adm0_dif"/>
+        <field labelOnTop="0" name="adm0_diff"/>
+        <field labelOnTop="0" name="adm0_iso"/>
+        <field labelOnTop="0" name="adm0_tlc"/>
+        <field labelOnTop="0" name="admin"/>
+        <field labelOnTop="0" name="brk_a3"/>
+        <field labelOnTop="0" name="brk_diff"/>
+        <field labelOnTop="0" name="brk_group"/>
+        <field labelOnTop="0" name="brk_name"/>
+        <field labelOnTop="0" name="continent"/>
+        <field labelOnTop="0" name="economy"/>
+        <field labelOnTop="0" name="fclass_ar"/>
+        <field labelOnTop="0" name="fclass_bd"/>
+        <field labelOnTop="0" name="fclass_br"/>
+        <field labelOnTop="0" name="fclass_cn"/>
+        <field labelOnTop="0" name="fclass_de"/>
+        <field labelOnTop="0" name="fclass_eg"/>
+        <field labelOnTop="0" name="fclass_es"/>
+        <field labelOnTop="0" name="fclass_fr"/>
+        <field labelOnTop="0" name="fclass_gb"/>
+        <field labelOnTop="0" name="fclass_gr"/>
+        <field labelOnTop="0" name="fclass_id"/>
+        <field labelOnTop="0" name="fclass_il"/>
+        <field labelOnTop="0" name="fclass_in"/>
+        <field labelOnTop="0" name="fclass_iso"/>
+        <field labelOnTop="0" name="fclass_it"/>
+        <field labelOnTop="0" name="fclass_jp"/>
+        <field labelOnTop="0" name="fclass_ko"/>
+        <field labelOnTop="0" name="fclass_ma"/>
+        <field labelOnTop="0" name="fclass_nl"/>
+        <field labelOnTop="0" name="fclass_np"/>
+        <field labelOnTop="0" name="fclass_pk"/>
+        <field labelOnTop="0" name="fclass_pl"/>
+        <field labelOnTop="0" name="fclass_ps"/>
+        <field labelOnTop="0" name="fclass_pt"/>
+        <field labelOnTop="0" name="fclass_ru"/>
+        <field labelOnTop="0" name="fclass_sa"/>
+        <field labelOnTop="0" name="fclass_se"/>
+        <field labelOnTop="0" name="fclass_tlc"/>
+        <field labelOnTop="0" name="fclass_tr"/>
+        <field labelOnTop="0" name="fclass_tw"/>
+        <field labelOnTop="0" name="fclass_ua"/>
+        <field labelOnTop="0" name="fclass_us"/>
+        <field labelOnTop="0" name="fclass_vn"/>
+        <field labelOnTop="0" name="featurecla"/>
+        <field labelOnTop="0" name="fips_10"/>
+        <field labelOnTop="0" name="formal_en"/>
+        <field labelOnTop="0" name="formal_fr"/>
+        <field labelOnTop="0" name="gdp_md"/>
+        <field labelOnTop="0" name="gdp_year"/>
+        <field labelOnTop="0" name="geou_dif"/>
+        <field labelOnTop="0" name="geounit"/>
+        <field labelOnTop="0" name="gid"/>
+        <field labelOnTop="0" name="gu_a3"/>
+        <field labelOnTop="0" name="homepart"/>
+        <field labelOnTop="0" name="income_grp"/>
+        <field labelOnTop="0" name="iso_a2"/>
+        <field labelOnTop="0" name="iso_a2_eh"/>
+        <field labelOnTop="0" name="iso_a3"/>
+        <field labelOnTop="0" name="iso_a3_eh"/>
+        <field labelOnTop="0" name="iso_n3"/>
+        <field labelOnTop="0" name="iso_n3_eh"/>
+        <field labelOnTop="0" name="label_x"/>
+        <field labelOnTop="0" name="label_y"/>
+        <field labelOnTop="0" name="labelrank"/>
+        <field labelOnTop="0" name="level"/>
+        <field labelOnTop="0" name="long_len"/>
+        <field labelOnTop="0" name="mapcolor13"/>
+        <field labelOnTop="0" name="mapcolor7"/>
+        <field labelOnTop="0" name="mapcolor8"/>
+        <field labelOnTop="0" name="mapcolor9"/>
+        <field labelOnTop="0" name="max_label"/>
+        <field labelOnTop="0" name="min_label"/>
+        <field labelOnTop="0" name="min_zoom"/>
+        <field labelOnTop="0" name="name"/>
+        <field labelOnTop="0" name="name_alt"/>
+        <field labelOnTop="0" name="name_ar"/>
+        <field labelOnTop="0" name="name_bn"/>
+        <field labelOnTop="0" name="name_ciawf"/>
+        <field labelOnTop="0" name="name_de"/>
+        <field labelOnTop="0" name="name_el"/>
+        <field labelOnTop="0" name="name_en"/>
+        <field labelOnTop="0" name="name_es"/>
+        <field labelOnTop="0" name="name_fa"/>
+        <field labelOnTop="0" name="name_fr"/>
+        <field labelOnTop="0" name="name_he"/>
+        <field labelOnTop="0" name="name_hi"/>
+        <field labelOnTop="0" name="name_hu"/>
+        <field labelOnTop="0" name="name_id"/>
+        <field labelOnTop="0" name="name_it"/>
+        <field labelOnTop="0" name="name_ja"/>
+        <field labelOnTop="0" name="name_ko"/>
+        <field labelOnTop="0" name="name_len"/>
+        <field labelOnTop="0" name="name_long"/>
+        <field labelOnTop="0" name="name_nl"/>
+        <field labelOnTop="0" name="name_pl"/>
+        <field labelOnTop="0" name="name_pt"/>
+        <field labelOnTop="0" name="name_ru"/>
+        <field labelOnTop="0" name="name_sort"/>
+        <field labelOnTop="0" name="name_sv"/>
+        <field labelOnTop="0" name="name_tr"/>
+        <field labelOnTop="0" name="name_uk"/>
+        <field labelOnTop="0" name="name_ur"/>
+        <field labelOnTop="0" name="name_vi"/>
+        <field labelOnTop="0" name="name_zh"/>
+        <field labelOnTop="0" name="name_zht"/>
+        <field labelOnTop="0" name="ne_id"/>
+        <field labelOnTop="0" name="note_adm0"/>
+        <field labelOnTop="0" name="note_brk"/>
+        <field labelOnTop="0" name="pop_est"/>
+        <field labelOnTop="0" name="pop_rank"/>
+        <field labelOnTop="0" name="pop_year"/>
+        <field labelOnTop="0" name="postal"/>
+        <field labelOnTop="0" name="region_un"/>
+        <field labelOnTop="0" name="region_wb"/>
+        <field labelOnTop="0" name="scalerank"/>
+        <field labelOnTop="0" name="sov_a3"/>
+        <field labelOnTop="0" name="sovereignt"/>
+        <field labelOnTop="0" name="su_a3"/>
+        <field labelOnTop="0" name="su_dif"/>
+        <field labelOnTop="0" name="subregion"/>
+        <field labelOnTop="0" name="subunit"/>
+        <field labelOnTop="0" name="tiny"/>
+        <field labelOnTop="0" name="tlc"/>
+        <field labelOnTop="0" name="tlc_diff"/>
+        <field labelOnTop="0" name="type"/>
+        <field labelOnTop="0" name="un_a3"/>
+        <field labelOnTop="0" name="wb_a2"/>
+        <field labelOnTop="0" name="wb_a3"/>
+        <field labelOnTop="0" name="wikidataid"/>
+        <field labelOnTop="0" name="woe_id"/>
+        <field labelOnTop="0" name="woe_id_eh"/>
+        <field labelOnTop="0" name="woe_note"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field name="abbrev" reuseLastValue="0"/>
+        <field name="abbrev_len" reuseLastValue="0"/>
+        <field name="adm0_a3" reuseLastValue="0"/>
+        <field name="adm0_a3_ar" reuseLastValue="0"/>
+        <field name="adm0_a3_bd" reuseLastValue="0"/>
+        <field name="adm0_a3_br" reuseLastValue="0"/>
+        <field name="adm0_a3_cn" reuseLastValue="0"/>
+        <field name="adm0_a3_de" reuseLastValue="0"/>
+        <field name="adm0_a3_eg" reuseLastValue="0"/>
+        <field name="adm0_a3_es" reuseLastValue="0"/>
+        <field name="adm0_a3_fr" reuseLastValue="0"/>
+        <field name="adm0_a3_gb" reuseLastValue="0"/>
+        <field name="adm0_a3_gr" reuseLastValue="0"/>
+        <field name="adm0_a3_id" reuseLastValue="0"/>
+        <field name="adm0_a3_il" reuseLastValue="0"/>
+        <field name="adm0_a3_in" reuseLastValue="0"/>
+        <field name="adm0_a3_it" reuseLastValue="0"/>
+        <field name="adm0_a3_jp" reuseLastValue="0"/>
+        <field name="adm0_a3_ko" reuseLastValue="0"/>
+        <field name="adm0_a3_ma" reuseLastValue="0"/>
+        <field name="adm0_a3_nl" reuseLastValue="0"/>
+        <field name="adm0_a3_np" reuseLastValue="0"/>
+        <field name="adm0_a3_pk" reuseLastValue="0"/>
+        <field name="adm0_a3_pl" reuseLastValue="0"/>
+        <field name="adm0_a3_ps" reuseLastValue="0"/>
+        <field name="adm0_a3_pt" reuseLastValue="0"/>
+        <field name="adm0_a3_ru" reuseLastValue="0"/>
+        <field name="adm0_a3_sa" reuseLastValue="0"/>
+        <field name="adm0_a3_se" reuseLastValue="0"/>
+        <field name="adm0_a3_tr" reuseLastValue="0"/>
+        <field name="adm0_a3_tw" reuseLastValue="0"/>
+        <field name="adm0_a3_ua" reuseLastValue="0"/>
+        <field name="adm0_a3_un" reuseLastValue="0"/>
+        <field name="adm0_a3_us" reuseLastValue="0"/>
+        <field name="adm0_a3_vn" reuseLastValue="0"/>
+        <field name="adm0_a3_wb" reuseLastValue="0"/>
+        <field name="adm0_dif" reuseLastValue="0"/>
+        <field name="adm0_diff" reuseLastValue="0"/>
+        <field name="adm0_iso" reuseLastValue="0"/>
+        <field name="adm0_tlc" reuseLastValue="0"/>
+        <field name="admin" reuseLastValue="0"/>
+        <field name="brk_a3" reuseLastValue="0"/>
+        <field name="brk_diff" reuseLastValue="0"/>
+        <field name="brk_group" reuseLastValue="0"/>
+        <field name="brk_name" reuseLastValue="0"/>
+        <field name="continent" reuseLastValue="0"/>
+        <field name="economy" reuseLastValue="0"/>
+        <field name="fclass_ar" reuseLastValue="0"/>
+        <field name="fclass_bd" reuseLastValue="0"/>
+        <field name="fclass_br" reuseLastValue="0"/>
+        <field name="fclass_cn" reuseLastValue="0"/>
+        <field name="fclass_de" reuseLastValue="0"/>
+        <field name="fclass_eg" reuseLastValue="0"/>
+        <field name="fclass_es" reuseLastValue="0"/>
+        <field name="fclass_fr" reuseLastValue="0"/>
+        <field name="fclass_gb" reuseLastValue="0"/>
+        <field name="fclass_gr" reuseLastValue="0"/>
+        <field name="fclass_id" reuseLastValue="0"/>
+        <field name="fclass_il" reuseLastValue="0"/>
+        <field name="fclass_in" reuseLastValue="0"/>
+        <field name="fclass_iso" reuseLastValue="0"/>
+        <field name="fclass_it" reuseLastValue="0"/>
+        <field name="fclass_jp" reuseLastValue="0"/>
+        <field name="fclass_ko" reuseLastValue="0"/>
+        <field name="fclass_ma" reuseLastValue="0"/>
+        <field name="fclass_nl" reuseLastValue="0"/>
+        <field name="fclass_np" reuseLastValue="0"/>
+        <field name="fclass_pk" reuseLastValue="0"/>
+        <field name="fclass_pl" reuseLastValue="0"/>
+        <field name="fclass_ps" reuseLastValue="0"/>
+        <field name="fclass_pt" reuseLastValue="0"/>
+        <field name="fclass_ru" reuseLastValue="0"/>
+        <field name="fclass_sa" reuseLastValue="0"/>
+        <field name="fclass_se" reuseLastValue="0"/>
+        <field name="fclass_tlc" reuseLastValue="0"/>
+        <field name="fclass_tr" reuseLastValue="0"/>
+        <field name="fclass_tw" reuseLastValue="0"/>
+        <field name="fclass_ua" reuseLastValue="0"/>
+        <field name="fclass_us" reuseLastValue="0"/>
+        <field name="fclass_vn" reuseLastValue="0"/>
+        <field name="featurecla" reuseLastValue="0"/>
+        <field name="fips_10" reuseLastValue="0"/>
+        <field name="formal_en" reuseLastValue="0"/>
+        <field name="formal_fr" reuseLastValue="0"/>
+        <field name="gdp_md" reuseLastValue="0"/>
+        <field name="gdp_year" reuseLastValue="0"/>
+        <field name="geou_dif" reuseLastValue="0"/>
+        <field name="geounit" reuseLastValue="0"/>
+        <field name="gid" reuseLastValue="0"/>
+        <field name="gu_a3" reuseLastValue="0"/>
+        <field name="homepart" reuseLastValue="0"/>
+        <field name="income_grp" reuseLastValue="0"/>
+        <field name="iso_a2" reuseLastValue="0"/>
+        <field name="iso_a2_eh" reuseLastValue="0"/>
+        <field name="iso_a3" reuseLastValue="0"/>
+        <field name="iso_a3_eh" reuseLastValue="0"/>
+        <field name="iso_n3" reuseLastValue="0"/>
+        <field name="iso_n3_eh" reuseLastValue="0"/>
+        <field name="label_x" reuseLastValue="0"/>
+        <field name="label_y" reuseLastValue="0"/>
+        <field name="labelrank" reuseLastValue="0"/>
+        <field name="level" reuseLastValue="0"/>
+        <field name="long_len" reuseLastValue="0"/>
+        <field name="mapcolor13" reuseLastValue="0"/>
+        <field name="mapcolor7" reuseLastValue="0"/>
+        <field name="mapcolor8" reuseLastValue="0"/>
+        <field name="mapcolor9" reuseLastValue="0"/>
+        <field name="max_label" reuseLastValue="0"/>
+        <field name="min_label" reuseLastValue="0"/>
+        <field name="min_zoom" reuseLastValue="0"/>
+        <field name="name" reuseLastValue="0"/>
+        <field name="name_alt" reuseLastValue="0"/>
+        <field name="name_ar" reuseLastValue="0"/>
+        <field name="name_bn" reuseLastValue="0"/>
+        <field name="name_ciawf" reuseLastValue="0"/>
+        <field name="name_de" reuseLastValue="0"/>
+        <field name="name_el" reuseLastValue="0"/>
+        <field name="name_en" reuseLastValue="0"/>
+        <field name="name_es" reuseLastValue="0"/>
+        <field name="name_fa" reuseLastValue="0"/>
+        <field name="name_fr" reuseLastValue="0"/>
+        <field name="name_he" reuseLastValue="0"/>
+        <field name="name_hi" reuseLastValue="0"/>
+        <field name="name_hu" reuseLastValue="0"/>
+        <field name="name_id" reuseLastValue="0"/>
+        <field name="name_it" reuseLastValue="0"/>
+        <field name="name_ja" reuseLastValue="0"/>
+        <field name="name_ko" reuseLastValue="0"/>
+        <field name="name_len" reuseLastValue="0"/>
+        <field name="name_long" reuseLastValue="0"/>
+        <field name="name_nl" reuseLastValue="0"/>
+        <field name="name_pl" reuseLastValue="0"/>
+        <field name="name_pt" reuseLastValue="0"/>
+        <field name="name_ru" reuseLastValue="0"/>
+        <field name="name_sort" reuseLastValue="0"/>
+        <field name="name_sv" reuseLastValue="0"/>
+        <field name="name_tr" reuseLastValue="0"/>
+        <field name="name_uk" reuseLastValue="0"/>
+        <field name="name_ur" reuseLastValue="0"/>
+        <field name="name_vi" reuseLastValue="0"/>
+        <field name="name_zh" reuseLastValue="0"/>
+        <field name="name_zht" reuseLastValue="0"/>
+        <field name="ne_id" reuseLastValue="0"/>
+        <field name="note_adm0" reuseLastValue="0"/>
+        <field name="note_brk" reuseLastValue="0"/>
+        <field name="pop_est" reuseLastValue="0"/>
+        <field name="pop_rank" reuseLastValue="0"/>
+        <field name="pop_year" reuseLastValue="0"/>
+        <field name="postal" reuseLastValue="0"/>
+        <field name="region_un" reuseLastValue="0"/>
+        <field name="region_wb" reuseLastValue="0"/>
+        <field name="scalerank" reuseLastValue="0"/>
+        <field name="sov_a3" reuseLastValue="0"/>
+        <field name="sovereignt" reuseLastValue="0"/>
+        <field name="su_a3" reuseLastValue="0"/>
+        <field name="su_dif" reuseLastValue="0"/>
+        <field name="subregion" reuseLastValue="0"/>
+        <field name="subunit" reuseLastValue="0"/>
+        <field name="tiny" reuseLastValue="0"/>
+        <field name="tlc" reuseLastValue="0"/>
+        <field name="tlc_diff" reuseLastValue="0"/>
+        <field name="type" reuseLastValue="0"/>
+        <field name="un_a3" reuseLastValue="0"/>
+        <field name="wb_a2" reuseLastValue="0"/>
+        <field name="wb_a3" reuseLastValue="0"/>
+        <field name="wikidataid" reuseLastValue="0"/>
+        <field name="woe_id" reuseLastValue="0"/>
+        <field name="woe_id_eh" reuseLastValue="0"/>
+        <field name="woe_note" reuseLastValue="0"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip enabled="1"></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7030</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawLabelMetrics type="bool">false</DrawLabelMetrics>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <RenderMapTile type="bool">false</RenderMapTile>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSLayers type="QStringList">
+      <value>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</value>
+    </WFSLayers>
+    <WFSLayersPrecision>
+      <admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f type="int">8</admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f>
+    </WFSLayersPrecision>
+    <WFSTLayers>
+      <Delete type="QStringList">
+        <value>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</value>
+      </Delete>
+      <Insert type="QStringList">
+        <value>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</value>
+      </Insert>
+      <Update type="QStringList">
+        <value>admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f</value>
+      </Update>
+    </WFSTLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSAddLayerGroupsLegendGraphic type="bool">false</WMSAddLayerGroupsLegendGraphic>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMSExtent type="QStringList">
+      <value>-232.24547519699999043</value>
+      <value>-94.34085251599999822</value>
+      <value>232.24547519699999043</value>
+      <value>87.97495316900000262</value>
+    </WMSExtent>
+    <WMSFeatureInfoUseAttributeFormSettings type="bool">false</WMSFeatureInfoUseAttributeFormSettings>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSTileBuffer type="int">0</WMSTileBuffer>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSUseLayerIDs type="bool">true</WMSUseLayerIDs>
+    <WMTSGrids>
+      <CRS type="QStringList"/>
+      <Config type="QStringList"/>
+    </WMTSGrids>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <dates>
+      <date type="Created" value="2024-09-02T21:22:39"/>
+    </dates>
+    <author>Ghassen Aouinti</author>
+    <creation>2024-09-02T21:22:39</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <mapViewDocks3D/>
+  <Bookmarks/>
+  <Sensors/>
+  <ProjectViewSettings rotation="0" UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymin="-94.34085251632494362" ymax="87.97495316932507592" xmax="232.24547519728830025" xmin="-232.24547519728824341">
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectStyleSettings projectStyleId="attachment:///rIYvTZ_styles.db" RandomizeDefaultSymbolColor="1" DefaultSymbolOpacity="1">
+    <databases/>
+  </ProjectStyleSettings>
+  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1"/>
+  <ElevationProperties>
+    <terrainProvider type="flat">
+      <TerrainProvider offset="0" scale="1"/>
+    </terrainProvider>
+  </ElevationProperties>
+  <ProjectDisplaySettings CoordinateType="MapCrs" CoordinateAxisOrder="Default">
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option type="invalid" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="direction_format"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="invalid" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+    <GeographicCoordinateFormat id="geographiccoordinate">
+      <Option type="Map">
+        <Option type="QString" value="DecimalDegrees" name="angle_format"/>
+        <Option type="invalid" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_leading_degree_zeros"/>
+        <Option type="bool" value="false" name="show_leading_zeros"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="false" name="show_suffix"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="invalid" name="thousand_separator"/>
+      </Option>
+    </GeographicCoordinateFormat>
+    <CoordinateCustomCrs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </CoordinateCustomCrs>
+  </ProjectDisplaySettings>
+  <ProjectGpsSettings autoCommitFeatures="0" autoAddTrackVertices="0" destinationLayer="admin_0_countries_dd99cd06_8479_4fb8_b29e_ffc0ef84920f" destinationLayerProvider="postgres" destinationLayerSource="dbname='mydatabase' host=172.26.185.179 port=5432 key='gid' srid=4326 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;public&quot;.&quot;admin_0_countries&quot; (geom)" destinationFollowsActiveLayer="1" destinationLayerName="admin_0_countries">
+    <timeStampFields/>
+  </ProjectGpsSettings>
+</qgis>
