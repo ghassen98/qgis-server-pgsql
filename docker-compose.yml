@@ -2,8 +2,13 @@ services:
   qgis-server:
     build: qgis-server
     volumes:
-      - ${PWD}/qgis-server/data:/data:ro
+      - ${PWD}/qgis-server/data:/data
     environment:
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
       - LANG=en_EN.UTF-8
       - QGIS_PROJECT_FILE=/data/world.qgs
       - QGIS_SERVER_LOG_LEVEL=0  # INFO (log all requests)
@@ -38,7 +43,7 @@ services:
       - 5432:5432
 
   pgadmin:
-    image: dpage/pgadmin4:8.11
+    image: dpage/pgadmin4:8.14
     container_name: pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com

@@ -147,7 +147,7 @@
         <ymax>83.63410065300007545</ymax>
       </wgs84extent>
       <id>admin_0_countries_d32a8bdc_26e4_4005_adf8_220878211b15</id>
-      <datasource>dbname='mydatabase' host='172.26.185.179' port='5432' user='myuser' password='mypassword' key='gid' srid=4326 type=MultiPolygon checkPrimaryKeyUnicity='1' table="public"."admin_0_countries" (geom)</datasource>
+      <datasource>dbname='$POSTGRES_DB' host='$POSTGRES_HOST' port='$POSTGRES_PORT' user='$POSTGRES_USER' password='$POSTGRES_PASSWORD' key='gid' srid=4326 type=MultiPolygon checkPrimaryKeyUnicity='1' table="public"."admin_0_countries" (geom)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
