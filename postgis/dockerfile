@@ -7,6 +7,7 @@ RUN set -eux \
       && apt-get update \
       && apt-get install -y --no-install-recommends \
            postgis \
+           gdal-bin \
            unzip \
       && dpkg -L postgis \     
       && rm -rf /var/lib/apt/lists/*
@@ -16,11 +17,18 @@ RUN set -eux \
 COPY ./data/admin_0_countries.zip /shapefiles/
 COPY ./load_shapefile.sh /docker-entrypoint-initdb.d/20-load_shapefile.sh
 
+# COPY the geojson files
+COPY ./data/geojson /geojson
+
+
 RUN unzip /shapefiles/admin_0_countries.zip -d /shapefiles
 RUN rm -rf /shapefiles/admin_0_countries.zip
 
 # Make the script executable
 RUN chmod +x /docker-entrypoint-initdb.d/20-load_shapefile.sh
+
+# Ajouter une ligne au fichier pg_hba.conf
+# RUN echo "host all all 0.0.0.0/0 md5" >> /var/lib/postgresql/data/pg_hba.conf
 
 # Expose the PostgreSQL port
 EXPOSE 5432

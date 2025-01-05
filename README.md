@@ -72,4 +72,16 @@ docker build -t custom-postgis .
 # Exécuter le conteneur Docker
 docker run --name postgis-container -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis
 
-docker run --name postgis-container -p 5432:5432 -e ALLOW_IP_RANGE=0.0.0.0/0 -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis
+ ALLOW_IP_RANGE=0.0.0.0/0
+
+docker run --name postgis-container -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -d custom-postgis
+
+/usr/local/bin/docker-entrypoint.sh : script for running entrypoints in postgis docker
+
+start the database server using:    pg_ctl -D /var/lib/postgresql/data -l logfile start
+
+ You may also use "POSTGRES_HOST_AUTH_METHOD=trust" to allow all connections without a password. This is *not* recommended.
+
+ psql -d my_database -U my_user
+ \c : list databases
+ \dt : list tables
