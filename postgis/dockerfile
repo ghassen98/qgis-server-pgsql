@@ -12,20 +12,26 @@ RUN set -eux \
       && dpkg -L postgis \     
       && rm -rf /var/lib/apt/lists/*
 
-# Copy the shapefile and the load script into the image
-# COPY ./data /shapefiles
-COPY ./data/admin_0_countries.zip /shapefiles/
+# Copy the init_vars.sh script
+COPY ./init_vars.sh /usr/bin/init_vars.sh
+RUN chmod +x /usr/bin/init_vars.sh
+
+# Copy shapefiles and shapefile loader script
+COPY ./data/shapefile /shapefiles/
 COPY ./load_shapefile.sh /docker-entrypoint-initdb.d/20-load_shapefile.sh
 
-# COPY the geojson files
+# Unzip all zip files in /shapefiles and remove the zip files
+RUN for file in /shapefiles/*.zip; do \
+      unzip "$file" -d /shapefiles && rm -rf "$file"; \
+    done
+
+# COPY geojson files and geojson loader script
 COPY ./data/geojson /geojson
-
-
-RUN unzip /shapefiles/admin_0_countries.zip -d /shapefiles
-RUN rm -rf /shapefiles/admin_0_countries.zip
+COPY ./load_geojson.sh /docker-entrypoint-initdb.d/30-load_geojson.sh
 
 # Make the script executable
 RUN chmod +x /docker-entrypoint-initdb.d/20-load_shapefile.sh
+RUN chmod +x /docker-entrypoint-initdb.d/30-load_geojson.sh
 
 # Ajouter une ligne au fichier pg_hba.conf
 # RUN echo "host all all 0.0.0.0/0 md5" >> /var/lib/postgresql/data/pg_hba.conf

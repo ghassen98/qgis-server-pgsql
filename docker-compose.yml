@@ -28,8 +28,6 @@ services:
 
   postgis:
     build: postgis
-    #volumes:
-    #    - postgis_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
