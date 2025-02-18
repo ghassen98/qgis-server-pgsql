@@ -12,6 +12,11 @@ for file in /shapefiles/*.shp; do
   table_name=$(basename "$file" .shp)
   echo "Importing $file into table $table_name"
   shp2pgsql -I -s 4326 "$file" "$table_name" | psql -d "$DB_NAME" -U "$DB_USER"
+
+  # Créer un index spatial sur la table importée
+  echo "Creating spatial index on table $table_name"
+  psql -d "$DB_NAME" -U "$DB_USER" -c "CREATE INDEX IF NOT EXISTS spatial_index_$table_name ON $table_name USING GIST(geom);"
 done
 
-echo "All Shapefiles have been imported."
+echo "All Shapefiles have been imported and indexed."
+

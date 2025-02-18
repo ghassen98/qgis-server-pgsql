@@ -1,0 +1,16 @@
+{
+    "Servers": {
+      "1": {
+        "Name": "PostGIS",
+        "Group": "Servers",
+        "Host": "postgis",
+        "Port": 5432,
+        "MaintenanceDB": "mydatabase",
+        "Username": "myuser",
+        "Password": "mypassword",
+        "SSLMode": "prefer",
+        "Shared": true
+      }
+    }
+  }
+  

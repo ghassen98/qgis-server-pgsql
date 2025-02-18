@@ -22,6 +22,10 @@ for file in /geojson/*.geojson; do
     -lco GEOMETRY_NAME=geom \
     -lco FID=id \
     -lco PRECISION=NO
+
+  # Create a spatial index on the imported table
+  echo "Creating spatial index on table $table_name"
+  psql -d "$DB_NAME" -U "$DB_USER" -c "CREATE INDEX IF NOT EXISTS spatial_index_$table_name ON $table_name USING GIST(geom);"
 done
 
-echo "All GeoJSON files have been imported."
+echo "All GeoJSON files have been imported and indexed."

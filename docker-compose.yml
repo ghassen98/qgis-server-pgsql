@@ -10,8 +10,9 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}
       - LANG=en_EN.UTF-8
-      - QGIS_PROJECT_FILE=/data/world.qgs
+      - QGIS_PROJECT_FILE=/data/dailymaps.qgs
       - QGIS_SERVER_LOG_LEVEL=0  # INFO (log all requests)
+      - QGIS_SERVER_CACHE_SIZE=268435456
       - DEBUG=1                  # display env before spawning QGIS Server
     depends_on:
       - postgis
@@ -44,15 +45,14 @@ services:
       - 5432:5432
 
   pgadmin:
-    image: dpage/pgadmin4:8.14
+    image: dpage/pgadmin4
     container_name: pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - ${PWD}/pgadmin/servers.json:/pgadmin4/servers.json
     ports:
       - "8081:80"
     depends_on:
       - postgis
-
-#volumes:
-#  postgis_data:
