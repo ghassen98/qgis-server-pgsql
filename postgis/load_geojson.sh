@@ -11,6 +11,8 @@ export PGPASSWORD=$DB_PASSWORD
 echo "Loading GeoJSON files.."
 for file in /geojson/*.geojson; do
   table_name=$(basename "$file" .geojson)
+
+  # Import the GeoJSON file into the database
   echo "Importing $file into table $table_name"
 
   ogr2ogr \

@@ -10,6 +10,8 @@ export PGPASSWORD=$DB_PASSWORD
 # Importer chaque Shapefile dans la base de données
 for file in /shapefiles/*.shp; do
   table_name=$(basename "$file" .shp)
+
+  # Importer le Shapefile dans la base de données
   echo "Importing $file into table $table_name"
   shp2pgsql -I -s 4326 "$file" "$table_name" | psql -d "$DB_NAME" -U "$DB_USER"
 
