@@ -58,3 +58,14 @@ services:
       - "8081:80"
     depends_on:
       - postgis
+  
+  tailscale:
+    image: tailscale/tailscale
+    container_name: tailscale
+    depends_on:
+      - nginx
+    network_mode: host  # Allows Tailscale to see all local ports
+    privileged: true    # Required for VPN functionality
+    volumes:
+      - /var/lib/tailscale:/var/lib/tailscale
+    command: tailscaled
