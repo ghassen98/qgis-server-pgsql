@@ -11,32 +11,83 @@
     <div id="map" style="width: 100%; height: 600px;"></div>
     <script>
         // Initialize the map
-        var map = L.map('map').setView([0, 0], 2);
+        var map = L.map('map').setView([45.536072,-73.6036991], 19);
 
         // Add a base layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
+        var wfsLayer;
+        var roads = [];
+        var carSpeed = 0.0000001; // Speed of the car
+
         // Function to fetch and add WFS layer
-        function addWFSLayer(url, layerName) {
+        function addWFSLayer(url) {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    L.geoJSON(data, {
+                    if (wfsLayer) {
+                        map.removeLayer(wfsLayer);
+                    }
+                    wfsLayer = L.geoJSON(data, {
                         onEachFeature: function (feature, layer) {
                             layer.bindPopup(feature.properties.name);
+                        },
+                        style: function (feature) {
+                            return { color: 'green', weight: 2 };
                         }
                     }).addTo(map);
+
+                    // Store road coordinates
+                    roads = data.features.map(feature => feature.geometry.coordinates);
                 })
                 .catch(error => console.error('Error fetching WFS layer:', error));
         }
 
-        // WFS URL
-        const wfsUrl = 'http://localhost:8080/qgis-server?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=admin_0_countries&outputFormat=application/json';
+        // Function to get the current map bounds as a BBOX string
+        function getBBOX() {
+            var bounds = map.getBounds();
+            return bounds.getWest() + ',' + bounds.getSouth() + ',' + bounds.getEast() + ',' + bounds.getNorth();
+        }
 
-        // Add the WFS layer to the map
-        addWFSLayer(wfsUrl, 'admin_0_countries');
+        // Function to update the WFS layer based on the current map bounds
+        function updateWFSLayer() {
+            var bbox = getBBOX();
+            var wfsUrl = 'http://96.22.27.254:8080/qgis-server?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=segments_finaux&outputFormat=application/json&BBOX=' + bbox;
+            addWFSLayer(wfsUrl);
+        }
+
+        // Update the WFS layer when the map is moved or zoomed
+        map.on('moveend', updateWFSLayer);
+
+        // Initial load of the WFS layer
+        updateWFSLayer();
+
+        // Add a car icon and make it move
+        var carIcon = L.icon({
+            iconUrl: 'img/car.png',
+            iconSize: [32, 32], // Size of the icon
+            iconAnchor: [16, 16] // Point of the icon which will correspond to marker's location
+        });
+
+        var carMarker = L.marker([45.536072, -73.6036991], { icon: carIcon }).addTo(map);
+
+        // Function to move the car
+        function moveCar() {
+            if (roads.length === 0) return;
+
+            var latlng = carMarker.getLatLng();
+            var currentRoad = roads[Math.floor(Math.random() * roads.length)];
+            var nextPoint = currentRoad[Math.floor(Math.random() * currentRoad.length)];
+
+            var newLatLng = L.latLng(nextPoint[1], nextPoint[0]);
+            carMarker.setLatLng(newLatLng);
+            map.setView(newLatLng); // Center the map on the car
+        }
+
+        // Move the car at the specified speed
+        setInterval(moveCar, carSpeed * 10000); // Adjust the interval as needed
     </script>
 </body>
 </html>
