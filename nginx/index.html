@@ -6,6 +6,14 @@
     <title>Leaflet Map with WFS Layer</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        .rotated-icon {
+            transform-origin: center;
+        }
+        .leaflet-marker-icon.rotated-icon {
+            transition: transform 2.5s;
+        }
+    </style>
 </head>
 <body>
     <div id="map" style="width: 100%; height: 600px;"></div>
@@ -68,21 +76,47 @@
         updateWFSLayer();
 
         // Add a car icon and make it move
-        var carIcon = L.icon({
-            iconUrl: 'img/car.png',
-            iconSize: [32, 32], // Size of the icon
-            iconAnchor: [16, 16] // Point of the icon which will correspond to marker's location
+        var carIcon = L.divIcon({
+            className: 'rotated-icon',
+            html: '<img id="car-icon" src="img/car.png" style="width: 32px; height: 32px;">',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16]
         });
+        // var carIcon = L.icon({
+        //     iconUrl: 'img/car.png',
+        //     iconSize: [32, 32], // Size of the icon
+        //     iconAnchor: [16, 16] // Point of the icon which will correspond to marker's location
+        // });
 
         var carMarker = L.marker(roads[0], { icon: carIcon }).addTo(map);
         var currentPointIndex = 0;
 
+        // Function to calculate the angle between two points
+        function calculateAngle(latlng1, latlng2) {
+            var dx = latlng2.lng - latlng1.lng;
+            var dy = latlng2.lat - latlng1.lat;
+            var angle = Math.atan2(dy, dx) * (180 / Math.PI);
+            return angle;
+        }
+
         // Function to move the car
         function moveCar() {
-            currentPointIndex = (currentPointIndex + 1) % roads.length;
-            var newLatLng = L.latLng(roads[currentPointIndex]);
-            carMarker.setLatLng(newLatLng);
-            map.setView(newLatLng); // Center the map on the car
+            var nextPointIndex = (currentPointIndex + 1) % roads.length;
+            var currentLatLng = L.latLng(roads[currentPointIndex]);
+            var nextLatLng = L.latLng(roads[nextPointIndex]);
+
+            var angle = calculateAngle(currentLatLng, nextLatLng);
+            var carElement = document.getElementById("car-icon");
+            if (carElement) {
+                angle += 140;
+
+                carElement.style.transform = 'rotate(' + angle + 'deg)'; 
+            }
+
+            carMarker.setLatLng(nextLatLng);
+            map.setView(nextLatLng); // Center the map on the car
+
+            currentPointIndex = nextPointIndex;
         }
 
         // Move the car at the specified speed
