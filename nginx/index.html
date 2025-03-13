@@ -27,6 +27,7 @@
         }).addTo(map);
 
         var wfsLayer;
+        var carInterval;
         // Predefined road coordinates in Montreal
         // Real road coordinates in Montreal
         var roads = [
@@ -119,8 +120,13 @@
             currentPointIndex = nextPointIndex;
         }
 
-        // Move the car at the specified speed
-        setInterval(moveCar, carSpeed); // Adjust the interval as needed
+        // Start moving the car when the icon is clicked
+        carMarker.on('click', function() {
+            if (carInterval) {
+                clearInterval(carInterval);
+            }
+            carInterval = setInterval(moveCar, carSpeed); // Adjust the interval as needed
+        });
     </script>
 </body>
 </html>
