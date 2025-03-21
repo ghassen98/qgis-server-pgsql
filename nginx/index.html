@@ -83,11 +83,6 @@
             iconSize: [32, 32],
             iconAnchor: [16, 16]
         });
-        // var carIcon = L.icon({
-        //     iconUrl: 'img/car.png',
-        //     iconSize: [32, 32], // Size of the icon
-        //     iconAnchor: [16, 16] // Point of the icon which will correspond to marker's location
-        // });
 
         var carMarker = L.marker(roads[0], { icon: carIcon }).addTo(map);
         var currentPointIndex = 0;
@@ -102,7 +97,14 @@
 
         // Function to move the car
         function moveCar() {
-            var nextPointIndex = (currentPointIndex + 1) % roads.length;
+            var nextPointIndex = currentPointIndex + 1;
+
+            // Stop the car if it reaches the end of the roads array
+            if (nextPointIndex >= roads.length) {
+                clearInterval(carInterval); // Stop the interval
+                return;
+            }
+
             var currentLatLng = L.latLng(roads[currentPointIndex]);
             var nextLatLng = L.latLng(roads[nextPointIndex]);
 
@@ -110,8 +112,7 @@
             var carElement = document.getElementById("car-icon");
             if (carElement) {
                 angle += 140;
-
-                carElement.style.transform = 'rotate(' + angle + 'deg)'; 
+                carElement.style.transform = 'rotate(' + angle + 'deg)';
             }
 
             carMarker.setLatLng(nextLatLng);
