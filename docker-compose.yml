@@ -3,6 +3,7 @@ services:
     build: qgis-server
     volumes:
       - ${PWD}/qgis-server/data:/data
+      - ${PWD}/qgis-server/data/img:/home/qgis/.local/share/QGIS/QGIS3/profiles/default/data/img #modify source path folder
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
