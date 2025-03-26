@@ -22,8 +22,13 @@
         var map = L.map('map').setView([45.539081, -73.617029], 19);
 
         // Add a base layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        var OSMBaselayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var usgsImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash;', 
+            maxZoom: 20
         }).addTo(map);
 
         var wfsLayer;
@@ -70,11 +75,48 @@
             addWFSLayer(wfsUrl);
         }
 
+        // Function to add a WMS layer to the map
+        function addWMSLayer(layerName, options = {}) {
+            const defaultOptions = {
+                format: 'image/png',
+                transparent: true,
+                attribution: '© QGIS Server'
+            };
+            const wmsOptions = { ...defaultOptions, ...options, layers: layerName };
+
+            const wmsLayer = L.tileLayer.wms('http://127.0.0.1:8080/qgis-server?', wmsOptions);
+            wmsLayer.addTo(map);
+            return wmsLayer; // Return the layer in case you need to manage it later
+        }
+
         // Update the WFS layer when the map is moved or zoomed
         map.on('moveend', updateWFSLayer);
 
         // Initial load of the WFS layer
         updateWFSLayer();
+        
+        // Add multiple WMS layers
+        const fireHydrantLayer = addWMSLayer('fire_hydrant');
+        const busStopLayer = addWMSLayer('bus_stop');
+        const bornesElectriquesLayer = addWMSLayer('bornes_electriques');
+        const feuxCirculationLayer = addWMSLayer('feux_circulation');
+        const signalisationArretLayer = addWMSLayer('signalisation_arret');
+
+        // Create a layers object
+        const baseLayers = {
+            "OSM": OSMBaselayer,
+            "USGS Imagery": usgsImagery
+        };
+        const overlayLayers = {
+            "Bornes Incendie": fireHydrantLayer,
+            "Arrêt de bus": busStopLayer,
+            "Bornes Electriques": bornesElectriquesLayer,
+            "Feux de circulation": feuxCirculationLayer,
+            "Signalisation d'arrêt": signalisationArretLayer
+        };
+
+        // Add a layer control to the map
+        L.control.layers(baseLayers, overlayLayers).addTo(map);
 
         // Add a car icon and make it move
         var carIcon = L.divIcon({
