@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remplace les variables d'environnement dans le fichier template
-# envsubst < /data/dailymaps-template.qgs > /data/dailymaps.qgs
+# envsubst < /data/project/dailymaps-template.qgs > /data/project/dailymaps.qgs
 
 [[ $DEBUG == "1" ]] && env
 
