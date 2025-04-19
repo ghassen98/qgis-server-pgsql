@@ -1,5 +1,6 @@
 services:
   qgis-server:
+    container_name: qgis-server
     build: qgis-server
     volumes:
       - ${PWD}/qgis-server/data:/data
@@ -18,6 +19,7 @@ services:
       - postgis
 
   nginx:
+    container_name: nginx
     image: nginx
     ports:
       - 8080:80
@@ -31,6 +33,7 @@ services:
       - qgis-server
 
   postgis:
+    container_name: postgis
     build: postgis
     environment:
       - POSTGRES_HOST=${POSTGRES_HOST}
@@ -46,6 +49,16 @@ services:
       retries: 5
     ports:
       - 5432:5432
+
+  nest-app:
+    container_name: nest-app
+    build: nestjs
+    depends_on:
+      - nginx
+    ports:
+      - "3000:3000"
+    env_file: 
+      - .env
 
   pgadmin:
     image: dpage/pgadmin4
