@@ -31,6 +31,13 @@
             maxZoom: 20
         }).addTo(map);
 
+        var Jawg_Streets = L.tileLayer('https://tile.jawg.io/jawg-streets/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
+            attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            minZoom: 0,
+            maxZoom: 22,
+            accessToken: 'KSR3pIp0mKV0AFBbA2pdl68r5Y4CiJQuJdDRn1X5WrBnIuhUMTwixsGKfQ3wJ0Gr'
+        });
+
         var wfsLayer;
         var carInterval;
         // Predefined road coordinates in Montreal
@@ -105,6 +112,7 @@
         // Create a layers object
         const baseLayers = {
             "OSM": OSMBaselayer,
+            "Jawg_Streets": Jawg_Streets,
             "USGS Imagery": usgsImagery
         };
         const overlayLayers = {
