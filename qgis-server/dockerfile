@@ -23,6 +23,7 @@ RUN apt-get update \
         spawn-fcgi \
         xauth \
         xvfb \
+        tini \
     && apt-get remove --purge -y \
         gnupg \
         wget \
@@ -30,9 +31,7 @@ RUN apt-get update \
 
 RUN useradd -m qgis
 
-ENV TINI_VERSION=v0.19.0
-ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
-RUN chmod +x /tini
+
 
 ENV QGIS_PREFIX_PATH=/usr
 ENV QGIS_SERVER_LOG_STDERR=1
@@ -45,6 +44,6 @@ RUN chown qgis:qgis /home/qgis/cmd.sh
 USER qgis
 WORKDIR /home/qgis
 
-ENTRYPOINT ["/tini", "--"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["/home/qgis/cmd.sh"]
